@@ -4,9 +4,9 @@ import './ServiceCard.css'
 
 // Import your SVG icons
 import sarkariIcon from '../../assets/home-icon.svg';
-import shikshaIcon from '../../assets/home-icon.svg';
-import gramIcon from '../../assets/bazar-icon.svg';
-import kishanIcon from '../../assets/farm.svg';
+import shikshaIcon from '../../assets/sahayak-icon.svg';
+import gramIcon from '../../assets/doctor-icon.svg';
+import kishanIcon from '../../assets/kisan-icon.svg';
 import gaonConnectIcon from '../../assets/connect-icon.svg';
 import gaonBazarIcon from '../../assets/bazar-icon.svg';
 import sevaBazarIcon from '../../assets/seva-icon.svg';

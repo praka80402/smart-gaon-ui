@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-undef */
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ServiceSection from './pages/dashboard/ServiceSection';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import ServiceSection from "./pages/dashboard/ServiceSection";
 
 function App() {
   return (
@@ -10,13 +10,16 @@ function App() {
       <header>
         <img src={logo} alt="Smart Gaon Logo" className="logo" />
         <h1>Smart Gaon</h1>
-        <p>Empowering rural India through digital transformation. Connecting villages with modern services, governance, and opportunities.</p>
+        <p>
+          Empowering rural India through digital transformation. Connecting
+          villages with modern services, governance, and opportunities.
+        </p>
         <div className="buttons">
-          <button>Login</button>
-          <button>Sign Up</button>
+          <button className="btn">Login</button>
+          <button className="btn btn-outline">Sign Up</button>
         </div>
       </header>
-       <ServiceSection />
+      <ServiceSection />
       {/* <section className="services">
         <ServiceCard name="Sarkari Seva" />
         <ServiceCard name="Shiksha Sahayak" />
