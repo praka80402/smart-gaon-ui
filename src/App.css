@@ -44,3 +44,28 @@ header {
   margin-bottom: 10px;
   border-radius: 50%;
 }
+/* Style for buttons with green color */
+.btn {
+  background-color: #01A800; /* Your specified color */
+  color: #fff;              /* Text color */
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #008000; /* Darker shade for hover effect, optional */
+}
+
+/* Optional: Different style for outline button if you need */
+.btn-outline {
+  background-color: transparent;
+  color: #01A800;
+  border: 2px solid #01A800;
+}
+
