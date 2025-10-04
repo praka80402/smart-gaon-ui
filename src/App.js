@@ -1,6 +1,8 @@
+/* eslint-disable react/jsx-no-undef */
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ServiceSection from './pages/dashboard/ServiceSection';
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
           <button>Sign Up</button>
         </div>
       </header>
-      <section className="services">
+       <ServiceSection />
+      {/* <section className="services">
         <ServiceCard name="Sarkari Seva" />
         <ServiceCard name="Shiksha Sahayak" />
         <ServiceCard name="Gram Doctor" />
@@ -23,7 +26,7 @@ function App() {
         <ServiceCard name="Gaon Bazar" />
         <ServiceCard name="Seva Bazar" />
         <ServiceCard name="Weather Report" />
-      </section>
+      </section> */}
     </div>
   );
 }
