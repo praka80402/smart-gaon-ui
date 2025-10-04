@@ -12,7 +12,7 @@ const ServiceSection = () => {
       <ServiceCard name="Gaon Connect" />
       <ServiceCard name="Gaon Bazar" />
       <ServiceCard name="Seva Bazar" />
-      <ServiceCard name="Weather Report" />
+      <ServiceCard name="Weather Report" to="/weather-report"  />
     </section>
   );
 };

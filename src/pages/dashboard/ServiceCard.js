@@ -1,5 +1,6 @@
 // src/components/ServiceCard.js
 import React from 'react';
+import { Link } from 'react-router-dom'; // import Link for navigation
 import './ServiceCard.css'
 
 // Import your SVG icons
@@ -23,16 +24,27 @@ const iconsMap = {
   "Weather Report": weatherIcon,
 };
 
-const ServiceCard = ({ name }) => {
+const ServiceCard = ({ name, to }) => {
   const iconSrc = iconsMap[name] || '';
 
-  return (
+  // If a 'to' prop is provided, wrap card with Link for navigation
+  const CardContent = (
     <div className="service-card">
-      {/* Render the SVG icon */}
       {iconSrc && <img src={iconSrc} alt={name} className="icon" />}
       <h3>{name}</h3>
     </div>
   );
+
+  if (to) {
+    return (
+      <Link to={to} style={{ textDecoration: 'none' }}>
+        {CardContent}
+      </Link>
+    );
+  }
+
+  // If no 'to', just render the card
+  return CardContent;
 };
 
 export default ServiceCard;
