@@ -5,6 +5,7 @@ import "./App.css";
 import ServiceSection from "./pages/dashboard/ServiceSection";
 // Import the WeatherReportPage directly (assuming it's the default export)
 import WeatherReportPage from './pages/weather-report/WeatherReportPage';
+import SarkariSeva from "./pages/sarkari-seva/SarkariSeva";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           
           {/* Route for weather report */}
           <Route path="/weather-report" element={<WeatherReportPage />} />
+           <Route path="/sarkari-seva" element={<SarkariSeva />} />
         </Routes>
       </div>
     </Router>
