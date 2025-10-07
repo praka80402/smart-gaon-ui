@@ -6,7 +6,7 @@ const ServiceSection = () => {
   return (
     <section className="services">
       <ServiceCard name="Sarkari Seva" />
-      <ServiceCard name="Shiksha Sahayak" />
+      <ServiceCard name="Shiksha Sahayak"  to="/shiksha-sahayak"/>
       <ServiceCard name="Gram Doctor" />
       <ServiceCard name="Kishan Mitra" />
       <ServiceCard name="Gaon Connect" />
