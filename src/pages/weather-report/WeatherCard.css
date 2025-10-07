@@ -1,0 +1,288 @@
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: #f9fafb;
+  min-height: 100vh;
+  color: #111827;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.page-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #4b5563;
+}
+
+/* Search Box */
+/* .search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 280px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.search-box input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 4px rgba(22, 163, 74, 0.3);
+}
+
+.search-box button {
+  padding: 10px 16px;
+  background: #16a34a;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #15803d;
+} */
+
+/* Tabs */
+/* .day-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.day-tab {
+  padding: 8px 14px;
+  border: 1px solid #16a34a;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #16a34a;
+  transition: 0.3s;
+}
+
+.day-tab:hover {
+  background: #f0fdf4;
+}
+
+.day-tab.active {
+  background: #16a34a;
+  color: white;
+} */
+
+/* Unit Toggle */
+/* .unit-toggle {
+  margin: 15px 0;
+}
+
+.unit-toggle button {
+  margin: 0 6px;
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.unit-toggle button.active {
+  background: #16a34a;
+  color: white;
+  border-color: #16a34a;
+} */
+
+/* Weather Card */
+/* .weather-card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-temp {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weather-desc {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #4b5563;
+  text-transform: capitalize;
+}
+
+.weather-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 10px;
+} */
+
+/* Fade In Animation */
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  */
+
+ html, body {
+  height: 120%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom, #3b82f6, #93c5fd, #e0f2fe);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#root {
+  height: 100%;
+}
+.wr-page {
+  font-family: "Segoe UI", sans-serif;
+  
+  background: #d6df8b;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  color: #111827;
+    
+    
+}
+
+  
+.wr-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff; 
+}
+
+.wr-search {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.wr-search input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 260px;
+}
+
+.wr-search button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #16a34a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.wr-search button:hover {
+  background: #15803d;
+}
+
+.wr-error {
+  color: red;
+}
+
+.wr-current {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 0 auto 20px;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.wr-current-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.wr-current-info img {
+  width: 100px;
+  height: 100px;
+}
+
+.wr-current-info h3 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.wr-forecast {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.wr-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  width: 120px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+.wr-day {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.wr-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.wr-desc {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #4b5563;
+} 
