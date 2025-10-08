@@ -7,7 +7,11 @@ import WeatherReportPage from "./pages/weather-report/WeatherReportPage";
 import Login from "./pages/login/login";
 import Signup from "./pages/login/Signup";
 import ShikshaSahayak from "./pages/Shiksha Sahayak/ShikshaSahayak";
-
+import Header from "./pages/dashboard/Header";
+import Dashboard from "./pages/dashboard/Dashboard";
+import Footer from "./pages/dashboard/Footer";
+import Weatherdashboard from "./pages/dashboard/Weatherdashboard";
+import ChatBot from "./pages/dashboard/Chatbot";
 function App() {
   return (
     <Router>
@@ -17,7 +21,7 @@ function App() {
           path="/"
           element={
             <div className="App">
-              <header>
+              {/* <header>
                 <img src={logo} alt="Smart Gaon Logo" className="logo" />
                 <h1>Smart Gaon</h1>
                 <p>
@@ -33,14 +37,19 @@ function App() {
                     <button className="btn btn-outline">Sign Up</button>
                   </Link>
                 </div>
-              </header>
-
+              </header> */}
+              <Header/>
+              <Dashboard />
+               <Weatherdashboard />
+ 
               <ServiceSection />
+              <ChatBot/>
+              <Footer />
             </div>
           }
         />
 
-        {/* Login Page (no header, opens separately) */}
+        {/* Login Page  */}
         <Route path="/login" element={<Login />} />
 
         {/* Weather report page */}

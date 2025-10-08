@@ -1,8 +1,8 @@
-.footer-container {
+/* .footer-container {
   margin-top: 50px;
   padding: 40px 20px;
-  background: #000;   /* Black background */
-  color: #fff;        /* White text */
+  background: #000;   
+  color: #fff;        
   text-align: center;
   font-family: Arial, sans-serif;
 }
@@ -12,7 +12,7 @@
   margin-bottom: 15px;
   font-size: 14px;
   text-decoration: none;
-  color: #00bfff; /* light blue link */
+  color: #00bfff; 
 }
 
 .footer-title {
@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  color: #ddd;  /* lighter gray text */
+  color: #ddd;  
 }
 
 .welcome {
@@ -73,6 +73,6 @@
   margin: 15px 0;
   font-size: 14px;
   color: #ddd;
-  justify-content: space-around;
-}
+  
+} */
 

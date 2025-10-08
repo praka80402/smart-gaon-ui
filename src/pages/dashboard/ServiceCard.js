@@ -27,7 +27,7 @@ const iconsMap = {
 const ServiceCard = ({ name, to }) => {
   const iconSrc = iconsMap[name] || '';
 
-  // If a 'to' prop is provided, wrap card with Link for navigation
+ 
   const CardContent = (
     <div className="service-card">
       {iconSrc && <img src={iconSrc} alt={name} className="icon" />}

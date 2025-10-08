@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Signup.css";
-import { useNavigate } from "react-router-dom";
-import Footer from "./footer"; 
+// import { useNavigate } from "react-router-dom";
+// import Footer from "./footer"; 
 import logo from "../../logo.svg";
 const Signup = () => {
-      const navigate = useNavigate();
+    //   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -34,13 +34,13 @@ const Signup = () => {
   return (
     <>
      {/* ✅ Back Button in top-right */}
-        <button className="back-btn" onClick={() => navigate("/")}>
-          ⬅ Back
-        </button>
+        {/* <button className="back-btn" onClick={() => navigate("/")}>
+          ⬅ 
+        </button> */}
       <div className="auth-container">
         <div className="auth-box">
  <img src={logo} alt="Smart Gaon Logo" className="logo" />
-          <h2>Smart Gaon</h2>
+          <h1>Smart Gaon</h1>
           <p className="subtitle">Create your account</p>
 
           <form onSubmit={handleSubmit}>
@@ -119,7 +119,7 @@ const Signup = () => {
       </div>
 
       {/* ✅ Footer below */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
