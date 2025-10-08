@@ -33,7 +33,7 @@ export default function ShikshaSahayak() {
     <div className="page-container" style={{ position: "relative" }}>
       
       {/* Back Button */}
-      <Link className="back-link" to="/">← Back</Link>
+      {/* <Link className="back-link" to="/">← Back</Link> */}
 
       <h1 className="page-title">Shiksha Sahayak (Education Assistant)</h1>
       <p className="page-text">
