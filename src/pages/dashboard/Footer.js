@@ -1,12 +1,15 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import "../../App.css";
+import logo from "../../logo.svg";
+
 
 function Footer() {
   return (
     <footer className="alt-footer">
       <div className="alt-footer-top">
-        <h2>🌱 Smart Gaon</h2>
+         <img src={logo} alt="Smart Gaon Logo" className="logo" />
+        <h2>SmartGaon AI</h2>
         <p>
           Empowering rural India through digital transformation and connecting villages
           with modern opportunities.
