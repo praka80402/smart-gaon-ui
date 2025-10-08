@@ -5,7 +5,7 @@
   justify-content: center;
   min-height: 100vh;
   
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
   padding: 30px;
 }
 
@@ -26,7 +26,7 @@
 .auth-box h2 {
   font-size: 26px;
   font-weight: bold;
-  color: #5554e3;
+  color: #54e37f;
   margin-bottom: 6px;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .auth-box input:focus {
-  border-color: #5554e3;
+  border-color: #16a34a;;
 }
 
 /* Password field with eye toggle */
@@ -86,7 +86,7 @@
 }
 
 .forgot-link {
-  color: #5554e3;
+  color: #16a34a;;
   text-decoration: none;
   font-weight: 500;
 }
@@ -94,7 +94,7 @@
 /* Primary Button */
 .btn-primary {
   width: 100%;
-  background: #5554e3;
+  background: #16a34a;;
   color: #fff;
   border: none;
   padding: 12px;
@@ -106,7 +106,7 @@
 }
 
 .btn-primary:hover {
-  background: #443dd4;
+  background: #16a34a;;
 }
 
 /* Switch between Login & Signup */
@@ -116,7 +116,7 @@
 }
 
 .switch-auth a {
-  color: #5554e3;
+  color: #16a34a;;
   font-weight: bold;
   text-decoration: none;
 }
