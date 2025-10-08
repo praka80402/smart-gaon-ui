@@ -11,13 +11,21 @@ function Header() {
     <header className="header">
       <div className="header-left">
         <img src={logo} alt="Smart Gaon Logo" className="logo" />
-        <h1>SmartGaon AI</h1>
+        <h1>Smartaon AI</h1>
       </div>
-      <FaUserCircle 
+      {/* <FaUserCircle 
         size={30} 
         className="profile-icon" 
         onClick={() => navigate("/login")} 
-      />
+      /> */}
+       
+       <div className="header-right">
+        {/* ✅ Only Login Button */}
+        <button className="login-btn" onClick={() => navigate("/login")}>
+          Login
+        </button>
+      </div>
+
     </header>
   );
 }

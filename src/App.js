@@ -10,6 +10,8 @@ import ShikshaSahayak from "./pages/Shiksha Sahayak/ShikshaSahayak";
 import Header from "./pages/dashboard/Header";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Footer from "./pages/dashboard/Footer";
+import Weatherdashboard from "./pages/dashboard/Weatherdashboard";
+import ChatBot from "./pages/dashboard/Chatbot";
 function App() {
   return (
     <Router>
@@ -38,14 +40,16 @@ function App() {
               </header> */}
               <Header/>
               <Dashboard />
+               <Weatherdashboard />
  
               <ServiceSection />
+              <ChatBot/>
               <Footer />
             </div>
           }
         />
 
-        {/* Login Page (no header, opens separately) */}
+        {/* Login Page  */}
         <Route path="/login" element={<Login />} />
 
         {/* Weather report page */}

@@ -47,6 +47,45 @@
   font-size: 20px;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn {
+  padding: 8px 16px;
+  background: #fff;
+  color: #16a34a;
+  border: none;
+  border-radius: 20px;
+   margin-right: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #16a34a;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #16a34a; 
+}
+
+
+
 
 /* Slideshow container */
 .slideshow {

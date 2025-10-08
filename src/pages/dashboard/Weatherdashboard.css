@@ -1,0 +1,75 @@
+/* Main card container */
+.weather-widget {
+  background: #16a34a;          
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 96%;                   
+  margin: 20px 0;                
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Top Section */
+.weather-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+   justify-content: center;
+  text-align: center;
+  
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-info h2 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.weather-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #f0fdf0;
+}
+
+/* Divider */
+.weather-divider {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 15px 0;
+}
+
+/* Bottom Section */
+.weather-bottom {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.weather-bottom div {
+  flex: 1;
+}
+
+.weather-bottom p {
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.weather-bottom small {
+  font-size: 12px;
+  color: #d1fae5;
+}
+
+.emoji {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
