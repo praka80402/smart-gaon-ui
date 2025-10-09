@@ -5,6 +5,7 @@ import ServiceSection from "./ServiceSection";
 import ImpactSection from "./ImpactSection";
 // import "./Dashboard.css";
 import "../../App.css";
+import ConnectingVillage from "./ConnectingVillage";
 function Dashboard() {
   return (
      
@@ -26,9 +27,11 @@ function Dashboard() {
       </section>
 
       {/* Reach */}
-      <section className="reach-section">
+      {/* <section className="reach-section">
         <h2>Our Reach Across States</h2>
-      </section>
+      </section> */}
+       <ConnectingVillage />   {/* ✅ imported component */}
+    
     </div>
   );
 }
