@@ -226,6 +226,24 @@
   font-size: 13px;
 }
 
+.footer-column ul li:hover {
+  color: #16a34a;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+
 
 
 body {
