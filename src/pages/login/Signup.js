@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Signup.css";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import Footer from "./footer"; 
 import logo from "../../logo.svg";
 const Signup = () => {
-    //   const navigate = useNavigate();
+      const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -37,6 +37,9 @@ const Signup = () => {
         {/* <button className="back-btn" onClick={() => navigate("/")}>
           ⬅ 
         </button> */}
+         <span className="close-btn" onClick={() => navigate("/")}>
+          &times;
+        </span>
       <div className="auth-container">
         <div className="auth-box">
  <img src={logo} alt="Smart Gaon Logo" className="logo" />

@@ -12,6 +12,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Footer from "./pages/dashboard/Footer";
 import Weatherdashboard from "./pages/dashboard/Weatherdashboard";
 import ChatBot from "./pages/dashboard/Chatbot";
+import Slideimage from "./pages/dashboard/Slideimage";
 function App() {
   return (
     <Router>
@@ -21,28 +22,13 @@ function App() {
           path="/"
           element={
             <div className="App">
-              {/* <header>
-                <img src={logo} alt="Smart Gaon Logo" className="logo" />
-                <h1>Smart Gaon</h1>
-                <p>
-                  Empowering rural India through digital transformation.
-                  Connecting villages with modern services, governance, and
-                  opportunities.
-                </p>
-                <div className="buttons">
-                  <Link to="/login">
-                    <button className="btn">Login</button>
-                  </Link>
-                  <Link to="/signup">
-                    <button className="btn btn-outline">Sign Up</button>
-                  </Link>
-                </div>
-              </header> */}
+             
               <Header/>
               <Dashboard />
-               <Weatherdashboard />
+              {/* <Slideimage/> */}
+               {/* <Weatherdashboard /> */}
  
-              <ServiceSection />
+              {/* <ServiceSection /> */}
               <ChatBot/>
               <Footer />
             </div>

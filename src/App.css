@@ -88,31 +88,7 @@
 
 
 /* Slideshow container */
-.slideshow {
-  width: 100%;
-   height: calc(90vh - 70px);
-  /* height: 300px; */
-  overflow: hidden;
-   margin-top: 72px; 
-  position: relative;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  
-}
 
-
-.slide-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation: fade 1s ease-in-out;
-}
-
-
-@keyframes fade {
-  from { opacity: 0.4; }
-  to { opacity: 1; }
-}
 
 /* FOOTER */
 
@@ -189,5 +165,61 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", sans-serif;
-  background: #f4f6f9;   
+  background:white;   
+}
+/* html, body, #root { height: 100%; }
+body { margin: 0; } */
+
+
+/* DASHBOARD */
+
+.dashboard {
+  padding: 20px;
+}
+
+
+.dashboard-section {
+  display: flex;
+  gap :20px;
+  align-items: stretch;
+  margin: 40px 0;
+}
+
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.impact-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+
+.impact-left {
+  flex: 3; 
+}
+
+
+.impact-right {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: #f9f9f9; */
+  padding: 15px;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+}
+
+
+.reach-section {
+  background: #eef6ff;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
 }
