@@ -33,10 +33,7 @@ const Signup = () => {
 
   return (
     <>
-     {/* ✅ Back Button in top-right */}
-        {/* <button className="back-btn" onClick={() => navigate("/")}>
-          ⬅ 
-        </button> */}
+     
          <span className="close-btn" onClick={() => navigate("/")}>
           &times;
         </span>
