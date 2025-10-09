@@ -1,42 +1,122 @@
-import React from "react";
-import { FaUserCircle } from "react-icons/fa";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../../App.css";
+//import { useTranslation } from 'react-i18next';
 import logo from "../../logo.svg";
-import lang from "../../assets/language.svg"
+import langIcon from "../../assets/language.svg";
+import i18n from '../../i18n'
 
 function Header() {
   const navigate = useNavigate();
+ // const { i18n } = useTranslation();
+  const [showDropdown, setShowDropdown] = useState(false);
 
-  const changeLan = () => {
+  // toggle dropdown visibility
+  const toggleDropdown = () => {
+    setShowDropdown((prev) => !prev);
+  };
 
-  console.log("Inside click")
+  // change language
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setShowDropdown(false); // close dropdown after selection
+  };
 
-  }
+  // get current language label
+  const getLangLabel = () => {
+    if (i18n.language === 'en') return 'English';
+    if (i18n.language === 'hi') return 'Hindi';
+    if (i18n.language === 'mr') return 'Marathi';
+    return 'Language';
+  };
 
   return (
     <header className="header">
       <div className="header-left">
         <img src={logo} alt="Smart Gaon Logo" className="logo" />
-        <h1>SmartGaon AI</h1>
+        <h1>  {i18n.t('smartgaon')}</h1>
       </div>
-      {/* <FaUserCircle 
-        size={30} 
-        className="profile-icon" 
-        onClick={() => navigate("/login")} 
-      /> */}
 
-    
-      
-       <div className="header-right">
-         <img onClick={() => changeLan()} src={lang} alt="Language" className="lang" />
-        
-        {/* ✅ Only Login Button */}
-        <button className="login-btn" onClick={() => navigate("/login")}>
-          Login
+      <div className="header-right" style={{ position: 'relative' }}>
+        {/* Language Icon */}
+        <img
+          src={langIcon}
+          alt="Language"
+          className="lang"
+          style={{ cursor: 'pointer' }}
+          onClick={toggleDropdown}
+        />
+
+        {/* Show current language label */}
+        <span style={{ marginLeft: '8px' }}>{getLangLabel()}</span>
+
+        {/* Dropdown menu */}
+        {showDropdown && (
+          <div
+            style={{
+             position: 'absolute',
+             top: '78%',
+              right: '130px',
+              background: '#fff',
+              border: '1px solid #ccc',
+              borderRadius: '4px',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+              zIndex: 1,
+            }}
+          >
+            <button
+              style={{
+                display: 'block',
+                width: '100%',
+                padding: '8px 16px',
+                background: 'none',
+                border: 'none',
+                textAlign: 'left',
+                cursor: 'pointer',
+              }}
+              onClick={() => changeLanguage('en')}
+            >
+              English
+            </button>
+            <button
+              style={{
+                display: 'block',
+                width: '100%',
+                padding: '8px 16px',
+                background: 'none',
+                border: 'none',
+                textAlign: 'left',
+                cursor: 'pointer',
+              }}
+              onClick={() => changeLanguage('hi')}
+            >
+              Hindi
+            </button>
+            <button
+              style={{
+                display: 'block',
+                width: '100%',
+                padding: '8px 16px',
+                background: 'none',
+                border: 'none',
+                textAlign: 'left',
+                cursor: 'pointer',
+              }}
+              onClick={() => changeLanguage('mr')}
+            >
+              Marathi
+            </button>
+          </div>
+        )}
+
+        {/* Login Button */}
+        <button
+          className="login-btn"
+          style={{ marginLeft: '16px' }}
+          onClick={() => navigate("/login")}
+        >
+          {i18n.t('login')}
         </button>
       </div>
-
     </header>
   );
 }
