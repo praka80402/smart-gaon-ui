@@ -15,6 +15,7 @@ import ChatBot from "./pages/dashboard/Chatbot";
 import SchoolLearning from "./pages/Shiksha Sahayak/SchoolLearning";
 import SchoolSubject from "./pages/Shiksha Sahayak/SchoolSubject";
 import PrivateRoute from "./pages/login/PrivateRoute";
+import ExamPreparation from "./pages/Shiksha Sahayak/exam-prep/ExamPreparation";
 function App() {
  return (
     // <Router>
@@ -98,6 +99,15 @@ function App() {
             element={
               <PrivateRoute>
                 <SchoolLearning />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/shiksha-sahayak/practice"
+            element={
+              <PrivateRoute>
+                <ExamPreparation />
               </PrivateRoute>
             }
           />
