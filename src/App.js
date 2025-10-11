@@ -15,7 +15,11 @@ import ChatBot from "./pages/dashboard/Chatbot";
 import SchoolLearning from "./pages/Shiksha Sahayak/SchoolLearning";
 import SchoolSubject from "./pages/Shiksha Sahayak/SchoolSubject";
 import PrivateRoute from "./pages/login/PrivateRoute";
+// <<<<<<< HEAD
 
+// =======
+import ExamPreparation from "./pages/Shiksha Sahayak/exam-prep/ExamPreparation";
+// >>>>>>> cd6b13e1c2a084c81241180ac4d73d89adf58b34
 function App() {
   //  const token = localStorage.getItem("token");
   // const location = useLocation();
@@ -86,6 +90,15 @@ function App() {
             element={
               <PrivateRoute>
                 <SchoolLearning />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/shiksha-sahayak/practice"
+            element={
+              <PrivateRoute>
+                <ExamPreparation />
               </PrivateRoute>
             }
           />
