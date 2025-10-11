@@ -1,16 +1,17 @@
 /* Grid layout */
-/* .page-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;  
-} */
+.page-container {
+  /* max-width: 900px; */
+  /* margin: 0 auto; */
+  margin-top: 50px;
+  padding: 40px ;
+  /* text-align: center;   */
+}
 .page-title, 
 .page-text {
   text-align: center;
 }
 .feature-grid {
-  margin-top: 30px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;

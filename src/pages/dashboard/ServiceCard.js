@@ -31,7 +31,7 @@ const ServiceCard = ({ name, to }) => {
   const CardContent = (
     <div className="service-card">
       {iconSrc && <img src={iconSrc} alt={name} className="icon" />}
-      <h3>{name}</h3>
+      <h5>{name}</h5>
     </div>
   );
 
