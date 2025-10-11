@@ -1,28 +1,40 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import Slideimage from "./Slideimage";
+import Weatherdashboard from "./Weatherdashboard";
+import ServiceSection from "./ServiceSection";
+import ImpactSection from "./ImpactSection";
+// import "./Dashboard.css";
 import "../../App.css";
-
-
-import img1 from "../../assets/img1.webp";
-import img2 from "../../assets/img2.jpg";
-import img3 from "../../assets/img3.jpg";
-
-const images = [img1, img2, img3];
-
+import ConnectingVillage from "./ConnectingVillage";
 function Dashboard() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); 
-    return () => clearInterval(interval); 
-  }, []);
-
   return (
-    <div className="slideshow">
-      <img src={images[currentIndex]} alt="Slideshow" className="slide-img" />
+     
+    <div className="dashboard">
+      {/* Slideshow */}
+      <Slideimage />
+
+      {/* Our Impact */}
+      <ImpactSection />
+
+      {/* Services + Weather */}
+      <section className="dashboard-section impact-layout">
+        <div className="impact-left">
+          <ServiceSection />
+        </div>
+        <div className="impact-right">
+          <Weatherdashboard/>
+        </div>
+      </section>
+
+      {/* Reach */}
+      {/* <section className="reach-section">
+        <h2>Our Reach Across States</h2>
+      </section> */}
+       <ConnectingVillage />   {/* ✅ imported component */}
+    
     </div>
   );
 }
 
 export default Dashboard;
+

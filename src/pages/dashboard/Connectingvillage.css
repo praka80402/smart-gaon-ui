@@ -1,0 +1,46 @@
+.reach-section {
+  background: #16a34a; 
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.reach-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.reach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reach-card {
+  background: rgba(255, 255, 255, 0.15); 
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.reach-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.reach-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.reach-card p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
