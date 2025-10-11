@@ -1,15 +1,17 @@
 
+/* :root {
+  --theme-green: #16a34a;
+} */
 
-
-/* Header */
+/* Header Container */
 .header {
   position: fixed;     
   top: 0;
   left: 0;
   width: 100%;
-   height: 70px; 
-  /* background: #0b1953; */
-  background: #16a34a;
+   height: 70px;  
+  
+   background: #16a34a;
   color: white;
   padding: 0px 20px;
   display: flex;
@@ -20,6 +22,9 @@
   justify-content: space-between;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
+
+
 .profile-icon {
   cursor: pointer;
   margin-right: 50px;
@@ -61,7 +66,141 @@
 .header-right {
   display: flex;
   align-items: center;
+}  */
+
+/* :root {
+  --theme-green: #16a34a;
 }
+
+/* Header Container */
+/* .header {
+  position: fixed;     
+  top: 0;
+  left: 0;
+  width: 100%;
+   height: 70px;  
+  
+   background: #16a34a;
+  color: white;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;     
+   display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+}
+
+.header-left h1 {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* Language */
+.lang-icon {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.lang-label {
+  color: white;
+  font-weight: 600;
+}
+
+/* Bell (Notification) */
+.bell-icon {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  filter: invert(33%) sepia(83%) saturate(567%) hue-rotate(84deg)
+    brightness(95%) contrast(97%);
+}
+
+/* Profile */
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(white);
+}
+
+.user-name {
+  margin-left: 8px;
+  font-weight: 700;
+  color: var(white);
+}
+
+/* Dropdown (Language + Profile) */
+.dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  min-width: 140px;
+  z-index: 5;
+}
+
+.dropdown button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  color: var(--theme-green);
+  font-weight: 600;
+}
+
+.dropdown button:hover {
+  background-color: rgba(22, 163, 74, 0.1);
+}
+
+/* Login */
+.login-btn {
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  text-decoration: underline;
+} */
+
 
 /* .login-btn {
   padding: 8px 16px;
@@ -87,7 +226,7 @@
   right: 20px;
   font-size: 26px;
   cursor: pointer;
-  color: #555;
+  color: #f5b8b8;
   transition: color 0.3s ease;
 }
 

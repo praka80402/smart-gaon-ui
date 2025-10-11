@@ -55,10 +55,12 @@ import React, { useState } from "react";
 import "./login.css";
 import avatar from "../../assets/avatar.png";
 import logo from "../../logo.svg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Login() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   
@@ -78,7 +80,8 @@ function Login() {
         const token = await response.text(); // backend returns JWT as plain string
         localStorage.setItem("token", token); // store JWT in browser
         alert("✅ Login successful!");
-        navigate("/"); // redirect after login
+         navigate(from, { replace: true });
+        // navigate("/"); // redirect after login
       } else {
         const error = await response.text();
         alert("❌ Login failed: " + error);

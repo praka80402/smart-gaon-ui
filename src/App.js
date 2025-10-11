@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link , useLocation} from "react-router-dom";
 // import logo from "./logo.svg";
 import "./App.css";
 // import ServiceSection from "./pages/dashboard/ServiceSection";
@@ -15,38 +15,16 @@ import ChatBot from "./pages/dashboard/Chatbot";
 import SchoolLearning from "./pages/Shiksha Sahayak/SchoolLearning";
 import SchoolSubject from "./pages/Shiksha Sahayak/SchoolSubject";
 import PrivateRoute from "./pages/login/PrivateRoute";
+
 function App() {
+  //  const token = localStorage.getItem("token");
+  // const location = useLocation();
  return (
-    // <Router>
-    //   <div className="App">
-    //     {/* Routes */}
-    //     <Routes>
-        
-    //       <Route
-    //         path="/"
-    //         element={
-    //           <>
-    //             <Header />
-    //             <Dashboard />
-    //           </>
-    //         }
-    //       />
-
-      
-    //       <Route path="/login" element={<Login />} />
-    //       <Route path="/signup" element={<Signup />} />
-    //       <Route path="/shiksha-sahayak" element={<ShikshaSahayak />} />
-    //       <Route path="/weather-report" element={<WeatherReportPage />} />
-    //        <Route path="/shiksha-sahayak/school-learning" element={<SchoolLearning />} />
-    //        <Route path="/shiksha-sahayak/school-learning/class/:classId" element={<SchoolSubject />} />
-    //     </Routes>
-
-    //     <ChatBot />
-    //     <Footer />
-    //   </div>
-    // </Router>
+     
+  
     <Router>
       <div className="App">
+      {/* {token ? <UserHeader /> : <Header />} */}
         <Header />
         <Routes>
           {/* Public routes */}
@@ -61,6 +39,16 @@ function App() {
         />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+{/* 
+                <Route
+        path="/ServiceSection"
+        element={
+          <PrivateRoute>
+           <ServiceSection />
+          </PrivateRoute>
+        }
+      /> */}
+
 
           {/* Protected routes */}
           {/* <Route
