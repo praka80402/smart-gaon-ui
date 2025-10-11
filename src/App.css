@@ -16,6 +16,8 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1000;     
+   display: flex;
+  justify-content: space-between;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 .profile-icon {
@@ -61,7 +63,7 @@
   align-items: center;
 }
 
-.login-btn {
+/* .login-btn {
   padding: 8px 16px;
   background: #fff;
   color: #16a34a;
@@ -77,7 +79,7 @@
   background: #16a34a;
   color: #fff;
   border: 1px solid #fff;
-}
+} */
 
 .close-btn {
   position: absolute;
@@ -92,6 +94,26 @@
 .close-btn:hover {
   color: #16a34a; 
 }
+
+.login-btn,
+.logout-btn {
+  /* background: #22c55e; */
+  color: #fff;
+  /* border: none; */
+  padding: 8px 16px;
+   margin-right: 50px;
+  /* border-radius: 6px; */
+  /* font-size: 14px;
+  font-weight: 600; */
+  cursor: pointer;
+  fontWeight: "bold"
+  /* transition: background 0.3s; */
+}
+
+/* .login-btn:hover,
+.logout-btn:hover {
+  background: #16a34a;
+} */
 
 
 
@@ -181,21 +203,27 @@
 
 .footer-container {
   display: flex;
+  align-items: flex-start; 
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
+   gap: 40px;
 }
 
 .footer-column {
   flex: 1;
+  /* padding: 40px ; */
+  /* margin-right: auto; */
+   /* text-align: right; */
   min-width: 250px;
-  margin: 10px 20px;
+  margin: 30px ;
 }
 
 .footer-column h3 {
   color: #22c55e; /* Green accent */
   margin-bottom: 15px;
+  /* text-align: ;  */
 }
 
 .footer-column ul {
@@ -247,8 +275,9 @@
 
 
 body {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
+   margin-top: 70px; 
   font-family: "Segoe UI", sans-serif;
   background:white;   
 }
