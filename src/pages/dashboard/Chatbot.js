@@ -39,7 +39,7 @@ function ChatBot() {
       {isOpen && (
         <div className="chat-window">
           <div className="chat-header">
-            <span>SmartGaon Chatbot</span>
+            <span>SmartGaon AI </span>
             <button onClick={toggleChat}>×</button>
           </div>
 

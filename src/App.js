@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
-import ServiceSection from "./pages/dashboard/ServiceSection";
+// import ServiceSection from "./pages/dashboard/ServiceSection";
 import WeatherReportPage from "./pages/weather-report/WeatherReportPage";
 import Login from "./pages/login/login";
 import Signup from "./pages/login/Signup";
@@ -10,60 +10,116 @@ import ShikshaSahayak from "./pages/Shiksha Sahayak/ShikshaSahayak";
 import Header from "./pages/dashboard/Header";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Footer from "./pages/dashboard/Footer";
-import Weatherdashboard from "./pages/dashboard/Weatherdashboard";
+// import Weatherdashboard from "./pages/dashboard/Weatherdashboard";
 import ChatBot from "./pages/dashboard/Chatbot";
+import SchoolLearning from "./pages/Shiksha Sahayak/SchoolLearning";
+import SchoolSubject from "./pages/Shiksha Sahayak/SchoolSubject";
+import PrivateRoute from "./pages/login/PrivateRoute";
 function App() {
-  return (
-    <Router>
-      <Routes>
-        {/* Homepage with header */}
-        <Route
-          path="/"
-          element={
-            <div className="App">
-              {/* <header>
-                <img src={logo} alt="Smart Gaon Logo" className="logo" />
-                <h1>Smart Gaon</h1>
-                <p>
-                  Empowering rural India through digital transformation.
-                  Connecting villages with modern services, governance, and
-                  opportunities.
-                </p>
-                <div className="buttons">
-                  <Link to="/login">
-                    <button className="btn">Login</button>
-                  </Link>
-                  <Link to="/signup">
-                    <button className="btn btn-outline">Sign Up</button>
-                  </Link>
-                </div>
-              </header> */}
-              <Header/>
-              <Dashboard />
-               <Weatherdashboard />
- 
-              <ServiceSection />
-              <ChatBot/>
-              <Footer />
-            </div>
-          }
-        />
-
-        {/* Login Page  */}
-        <Route path="/login" element={<Login />} />
-
-        {/* Weather report page */}
-        <Route path="/weather-report" element={<WeatherReportPage />} />
-
-        {/*  Signup Page */}
-        <Route path="/signup" element={<Signup />} />
-         <Route path="/shiksha-sahayak" element={<ShikshaSahayak />} />
-
+ return (
+    // <Router>
+    //   <div className="App">
+    //     {/* Routes */}
+    //     <Routes>
         
+    //       <Route
+    //         path="/"
+    //         element={
+    //           <>
+    //             <Header />
+    //             <Dashboard />
+    //           </>
+    //         }
+    //       />
 
-      </Routes>
-    </Router>
+      
+    //       <Route path="/login" element={<Login />} />
+    //       <Route path="/signup" element={<Signup />} />
+    //       <Route path="/shiksha-sahayak" element={<ShikshaSahayak />} />
+    //       <Route path="/weather-report" element={<WeatherReportPage />} />
+    //        <Route path="/shiksha-sahayak/school-learning" element={<SchoolLearning />} />
+    //        <Route path="/shiksha-sahayak/school-learning/class/:classId" element={<SchoolSubject />} />
+    //     </Routes>
+
+    //     <ChatBot />
+    //     <Footer />
+    //   </div>
+    // </Router>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          {/* Public routes */}
+           <Route
+            path="/"
+            element={
+              // <>
+                
+                <Dashboard />
+              // </>
+            }
+        />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+
+          {/* Protected routes */}
+          {/* <Route
+            path="/"
+            element={
+              <PrivateRoute>
+                <>
+                  <Header />
+                  <Dashboard />
+                </>
+              </PrivateRoute>
+            }
+          /> */}
+
+          <Route
+            path="/shiksha-sahayak"
+            element={
+              <PrivateRoute>
+                <ShikshaSahayak />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/weather-report"
+            element={
+              <PrivateRoute>
+                <WeatherReportPage />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/shiksha-sahayak/school-learning"
+            element={
+              <PrivateRoute>
+                <SchoolLearning />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+            path="/shiksha-sahayak/school-learning/class/:classId"
+            element={
+              <PrivateRoute>
+                <SchoolSubject />
+              </PrivateRoute>
+            }
+          />
+        </Routes>
+
+        {/* Always visible */}
+        <ChatBot />
+        <Footer />
+      </div>
+      </Router>
   );
 }
 
 export default App;
+
+

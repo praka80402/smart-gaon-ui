@@ -1,0 +1,80 @@
+{
+  "1": {
+    "English": [
+      { "title": "Chapter 1: A Happy Child", "link": "https://ncert.nic.in/textbook/pdf/aeen101.pdf" },
+      { "title": "Chapter 2: Three Little Pigs", "link": "https://ncert.nic.in/textbook/pdf/aeen102.pdf" },
+      { "title": "Chapter 3: After a Bath", "link": "https://ncert.nic.in/textbook/pdf/aeen103.pdf" },
+      { "title": "Chapter 4: The Bubble, the Straw and the Shoe", "link": "https://ncert.nic.in/textbook/pdf/aeen104.pdf" },
+      { "title": "Chapter 5: One Little Kitten", "link": "https://ncert.nic.in/textbook/pdf/aeen105.pdf" },
+      { "title": "Chapter 6: Lalu and Peelu", "link": "https://ncert.nic.in/textbook/pdf/aeen106.pdf" }
+    ],
+    "Hindi": [
+      { "title": "अध्याय 1: झूला", "link": "https://ncert.nic.in/textbook/pdf/ahhn101.pdf" },
+      { "title": "अध्याय 2: आम की कहानी", "link": "https://ncert.nic.in/textbook/pdf/ahhn102.pdf" },
+      { "title": "अध्याय 3: आम", "link": "https://ncert.nic.in/textbook/pdf/ahhn103.pdf" },
+      { "title": "अध्याय 4: पत्ते ही पत्ते", "link": "https://ncert.nic.in/textbook/pdf/ahhn104.pdf" }
+    ],
+    "Math": [
+      { "title": "Chapter 1: Shapes and Space", "link": "https://ncert.nic.in/textbook/pdf/ahmh101.pdf" },
+      { "title": "Chapter 2: Numbers from One to Nine", "link": "https://ncert.nic.in/textbook/pdf/ahmh102.pdf" },
+      { "title": "Chapter 3: Addition", "link": "https://ncert.nic.in/textbook/pdf/ahmh103.pdf" },
+      { "title": "Chapter 4: Subtraction", "link": "https://ncert.nic.in/textbook/pdf/ahmh104.pdf" }
+    ]
+  },
+  "2": {
+    "English": [
+      { "title": "Chapter 1: First Day at School", "link": "https://ncert.nic.in/textbook/pdf/aepn101.pdf" },
+      { "title": "Chapter 2: Haldi’s Adventure", "link": "https://ncert.nic.in/textbook/pdf/aepn102.pdf" }
+    ],
+    "Hindi": [
+      { "title": "अध्याय 1: ऊँट चला", "link": "https://ncert.nic.in/textbook/pdf/ahhn201.pdf" },
+      { "title": "अध्याय 2: भालू ने खेली फुटबॉल", "link": "https://ncert.nic.in/textbook/pdf/ahhn202.pdf" }
+    ],
+    "Math": [
+      { "title": "Chapter 1: What is Long, What is Round?", "link": "https://ncert.nic.in/textbook/pdf/ahmh201.pdf" },
+      { "title": "Chapter 2: Counting in Groups", "link": "https://ncert.nic.in/textbook/pdf/ahmh202.pdf" }
+    ]
+  },
+  "3": {
+    "English": [
+      { "title": "Chapter 1: Good Morning", "link": "https://ncert.nic.in/textbook/pdf/aepn301.pdf" },
+      { "title": "Chapter 2: The Magic Garden", "link": "https://ncert.nic.in/textbook/pdf/aepn302.pdf" }
+    ],
+    "Hindi": [
+      { "title": "अध्याय 1: कक्कू", "link": "https://ncert.nic.in/textbook/pdf/ahhn301.pdf" },
+      { "title": "अध्याय 2: शेखीबाज मक्खी", "link": "https://ncert.nic.in/textbook/pdf/ahhn302.pdf" }
+    ],
+    "Math": [
+      { "title": "Chapter 1: Where to Look From", "link": "https://ncert.nic.in/textbook/pdf/ahmh301.pdf" },
+      { "title": "Chapter 2: Fun with Numbers", "link": "https://ncert.nic.in/textbook/pdf/ahmh302.pdf" }
+    ]
+  },
+  "4": {
+    "English": [
+      { "title": "Chapter 1: Wake Up!", "link": "https://ncert.nic.in/textbook/pdf/aepn401.pdf" },
+      { "title": "Chapter 2: Neha’s Alarm Clock", "link": "https://ncert.nic.in/textbook/pdf/aepn402.pdf" }
+    ],
+    "Hindi": [
+      { "title": "अध्याय 1: मन के भोले-भाले बादल", "link": "https://ncert.nic.in/textbook/pdf/ahhn401.pdf" },
+      { "title": "अध्याय 2: जैसा सवाल वैसा जवाब", "link": "https://ncert.nic.in/textbook/pdf/ahhn402.pdf" }
+    ],
+    "Math": [
+      { "title": "Chapter 1: Building with Bricks", "link": "https://ncert.nic.in/textbook/pdf/ahmh401.pdf" },
+      { "title": "Chapter 2: Long and Short", "link": "https://ncert.nic.in/textbook/pdf/ahmh402.pdf" }
+    ]
+  },
+  "5": {
+    "English": [
+      { "title": "Chapter 1: Ice-cream Man", "link": "https://ncert.nic.in/textbook/pdf/aepn501.pdf" },
+      { "title": "Chapter 2: Wonderful Waste!", "link": "https://ncert.nic.in/textbook/pdf/aepn502.pdf" }
+    ],
+    "Hindi": [
+      { "title": "अध्याय 1: राख की रस्सी", "link": "https://ncert.nic.in/textbook/pdf/ahhn501.pdf" },
+      { "title": "अध्याय 2: फसलों के त्योहार", "link": "https://ncert.nic.in/textbook/pdf/ahhn502.pdf" }
+    ],
+    "Math": [
+      { "title": "Chapter 1: The Fish Tale", "link": "https://ncert.nic.in/textbook/pdf/ahmh501.pdf" },
+      { "title": "Chapter 2: Shapes and Angles", "link": "https://ncert.nic.in/textbook/pdf/ahmh502.pdf" }
+    ]
+  }
+}

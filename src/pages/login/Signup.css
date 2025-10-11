@@ -1,4 +1,4 @@
-/* Centered page container */
+
 .auth-container {
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
   padding: 30px;
 }
 
-/* Box/card */
+
 .auth-box {
   width: 100%;
   /* max-width: 400px; */
@@ -22,7 +22,6 @@
   text-align: center;
 }
 
-/* Title + Subtitle */
 .auth-box h2 {
   font-size: 26px;
   font-weight: bold;
@@ -36,7 +35,7 @@
   margin-bottom: 20px;
 }
 
-/* Inputs */
+
 .auth-box input {
   width: 100%;
   padding: 12px;
@@ -48,11 +47,16 @@
   transition: border 0.2s;
 }
 
+.auth-box .logo {
+  width: 120px;    
+  height: auto;    
+  margin-bottom: 15px;
+}
+
 .auth-box input:focus {
   border-color: #16a34a;;
 }
 
-/* Password field with eye toggle */
 .password-field {
   position: relative;
 }
@@ -91,7 +95,7 @@
   font-weight: 500;
 }
 
-/* Primary Button */
+
 .btn-primary {
   width: 100%;
   background: #16a34a;;
@@ -109,7 +113,7 @@
   background: #16a34a;;
 }
 
-/* Switch between Login & Signup */
+
 .switch-auth {
   font-size: 14px;
   margin-top: 15px;
