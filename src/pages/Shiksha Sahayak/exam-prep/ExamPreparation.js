@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./ExamPreparation.css";
 
 const ExamPreparation = () => {
   const [exam, setExam] = useState("");
@@ -61,85 +62,7 @@ const ExamPreparation = () => {
 
   return (
     <div>
-      <style>{`
-        body {
-          font-family: 'Roboto', sans-serif;
-          background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
-          min-height: 100vh;
-        }
-        .hero-header {
-          background: linear-gradient(45deg, #4caf50, #81c784);
-          color: white;
-          padding: 40px 0;
-          text-align: center;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .main-content {
-          background: white;
-          border-radius: 15px;
-          padding: 30px;
-          box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-          margin: 20px auto;
-          max-width: 1165px;
-        }
-        .form-select {
-          border-radius: 8px;
-          border: 1px solid #ddd;
-          margin-bottom: 15px;
-        }
-        .video-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 20px;
-          margin-top: 20px;
-        }
-        .video-card {
-          border: 1px solid #ddd;
-          border-radius: 10px;
-          overflow: hidden;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-          transition: all 0.3s;
-        }
-        .video-card:hover {
-          transform: scale(1.02);
-          box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-        .video-card h6 {
-          padding: 10px;
-          margin: 0;
-          background: #f8f9fa;
-          font-size: 16px;
-          font-weight: bold;
-        }
-        .video-iframe {
-          width: 100%;
-          height: 200px;
-          border: none;
-        }
-        .loading {
-          text-align: center;
-          color: #666;
-          padding: 40px;
-          font-size: 18px;
-        }
-        footer {
-          background: #2e7d32;
-          color: white;
-          padding: 20px 0;
-          text-align: center;
-          margin-top: 40px;
-        }
-        @media (max-width: 768px) {
-          .main-content { margin: 10px; padding: 20px; }
-          .hero-header { padding: 20px 0; }
-          .video-iframe { height: 150px; }
-          .video-grid { grid-template-columns: 1fr; }
-        }
-      `}</style>
-
-     
-
-      {/* Main Content */}
+     {/* Main Content */}
       <div className="container">
         <div className="main-content" style={{ marginTop: '70px' }}>
           <h2 className="text-center mb-4">

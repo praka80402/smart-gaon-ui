@@ -19,6 +19,7 @@ import PrivateRoute from "./pages/login/PrivateRoute";
 
 // =======
 import ExamPreparation from "./pages/Shiksha Sahayak/exam-prep/ExamPreparation";
+import Ncert from "./pages/Shiksha Sahayak/Ncert-course/Ncert";
 // >>>>>>> cd6b13e1c2a084c81241180ac4d73d89adf58b34
 function App() {
   //  const token = localStorage.getItem("token");
@@ -89,7 +90,7 @@ function App() {
             path="/shiksha-sahayak/school-learning"
             element={
               <PrivateRoute>
-                <SchoolLearning />
+                <Ncert />
               </PrivateRoute>
             }
           />
