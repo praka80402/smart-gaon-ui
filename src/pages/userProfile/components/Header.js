@@ -37,7 +37,7 @@ export default function Header({ setLoggedIn }) {
     <header className="user-header">
       <div className="header-left">
         <img src={logo} alt="SmartGaon Logo" className="header-logo" />
-        <span className="header-title">SmartGaon Connect</span>
+        <span className="header-title">SmartGaon AI</span>
       </div>
 
       <nav className="header-nav">
