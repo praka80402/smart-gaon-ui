@@ -30,7 +30,7 @@ const LoginPage = ({ showModal, setShowModal, setLoggedIn }) => {
     const token = localStorage.getItem("token");
     if (token) {
       const redirectAfterLogin =
-        localStorage.getItem("redirectAfterLogin") || "/";
+        localStorage.getItem("redirectAfterLogin") || "/user-dashboard";
       localStorage.removeItem("redirectAfterLogin");
       navigate(redirectAfterLogin, { replace: true });
     }

@@ -40,6 +40,7 @@ import ConnectingVillage from "./ConnectingVillage";
 function Dashboard({ setShowLoginModal }) {
   return (
     <div className="dashboard">
+      
       <Slideimage />
       <ImpactSection />
       <section className="dashboard-section impact-layout">

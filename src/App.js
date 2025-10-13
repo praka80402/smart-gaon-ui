@@ -349,6 +349,11 @@ import Ncert from "./pages/Shiksha Sahayak/Ncert-course/Ncert";
 import ExamPreparation from "./pages/Shiksha Sahayak/exam-prep/ExamPreparation";
 import SchoolSubject from "./pages/Shiksha Sahayak/SchoolSubject";
 
+
+import UserDashboard from "./pages/userProfile/UserDashboard";
+import ProfilePage from "./pages/userProfile/ProfilePage";
+import UserHeader from "./pages/userProfile/components/Header";
+
 function App() {
   // 🔑 Global login modal & authentication state
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -358,11 +363,22 @@ function App() {
     <Router>
       <div className="App">
         {/* ✅ Header (with login modal control) */}
-        <Header
+        {/* <Header
           setShowLoginModal={setShowLoginModal}
           loggedIn={loggedIn}
           setLoggedIn={setLoggedIn}
-        />
+        /> */}
+         {loggedIn ? (
+          <UserHeader setLoggedIn={setLoggedIn} />
+        ) : (
+          <Header
+            setShowLoginModal={setShowLoginModal}
+            loggedIn={loggedIn}
+            setLoggedIn={setLoggedIn}
+          />
+        )}
+
+
 
         <Routes>
           {/* 🏠 Dashboard — public landing page */}
@@ -411,6 +427,26 @@ function App() {
             element={
               <PrivateRoute>
                 <SchoolSubject />
+              </PrivateRoute>
+            }
+          />
+
+           {/* 👤 User Dashboard (Feed + Sidebar + Header inside it) */}
+          <Route
+            path="/user-dashboard"
+            element={
+              <PrivateRoute>
+                <UserDashboard />
+              </PrivateRoute>
+            }
+          />
+
+          {/* 👤 User Profile Page */}
+          <Route
+            path="/profile"
+            element={
+              <PrivateRoute>
+                <ProfilePage />
               </PrivateRoute>
             }
           />
