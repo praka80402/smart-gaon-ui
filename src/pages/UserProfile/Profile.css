@@ -1,0 +1,89 @@
+.profile-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.main-header {
+  background: linear-gradient(45deg, #2e7d32, #66bb6a);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.profile-box {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.profile-details label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.profile-details input,
+.profile-details textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  20%, 80% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}

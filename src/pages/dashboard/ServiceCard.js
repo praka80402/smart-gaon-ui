@@ -1,6 +1,6 @@
 // src/components/ServiceCard.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // import Link for navigation
+import { Link, useNavigate } from 'react-router-dom'; // import Link for navigation
 import './ServiceCard.css'
 
 // Import your SVG icons
@@ -24,27 +24,81 @@ const iconsMap = {
   "Weather Report": weatherIcon,
 };
 
-const ServiceCard = ({ name, to }) => {
+// const ServiceCard = ({ name, to }) => {
+//    const navigate = useNavigate();
+//   const iconSrc = iconsMap[name] || '';
+
+//  const handleClick = () => {
+//     const token = localStorage.getItem('token');
+//     if (!token) {
+//       // Save the intended route for after login
+//       localStorage.setItem('redirectAfterLogin', to);
+//       navigate("/login");
+//     } else {
+//       navigate(to);
+//     }
+//   };
+//    return (
+//     <div
+//       className="service-card"
+//       onClick={handleClick}
+//       style={{ cursor: "pointer" }}
+//     >
+//       {iconSrc && <img src={iconSrc} alt={name} className="icon" />}
+//       <h5>{name}</h5>
+//     </div>
+//   );
+// };
+
+const ServiceCard = ({ name, to, setShowLoginModal }) => {
+  const navigate = useNavigate();
   const iconSrc = iconsMap[name] || '';
 
- 
-  const CardContent = (
-    <div className="service-card">
+  const handleClick = () => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      localStorage.setItem('redirectAfterLogin', to);
+      setShowLoginModal(true); // ✅ open modal directly
+    } else {
+      navigate(to);
+    }
+  };
+
+  return (
+    <div
+      className="service-card"
+      onClick={handleClick}
+      style={{ cursor: "pointer" }}
+    >
       {iconSrc && <img src={iconSrc} alt={name} className="icon" />}
       <h5>{name}</h5>
     </div>
   );
-
-  if (to) {
-    return (
-      <Link to={to} style={{ textDecoration: 'none' }}>
-        {CardContent}
-      </Link>
-    );
-  }
-
-  // If no 'to', just render the card
-  return CardContent;
 };
+
+
+
+
+
+
+
+//   const CardContent = (
+//     <div className="service-card">
+//       {iconSrc && <img src={iconSrc} alt={name} className="icon" />}
+//       <h5>{name}</h5>
+//     </div>
+//   );
+
+//   if (to) {
+//     return (
+//       <Link to={to} style={{ textDecoration: 'none' }}>
+//         {CardContent}
+//       </Link>
+//     );
+//   }
+
+  
+//   return CardContent;
+// };
 
 export default ServiceCard;

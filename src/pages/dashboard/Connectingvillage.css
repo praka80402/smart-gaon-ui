@@ -15,6 +15,8 @@
 .reach-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  /* background-color: white; */
+   /* color: #16a34a; */
   gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
@@ -42,5 +44,5 @@
 .reach-card p {
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
+  color: white;
 }

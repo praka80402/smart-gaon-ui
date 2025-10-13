@@ -1,142 +1,156 @@
+/* 🌿 SmartGaon Global Theme */
 :root {
-  --theme-green: #16a34a;
+  --theme-green: #198754;
+  --theme-green-dark: #157347;
   --white: #ffffff;
 }
 
-
+/* -------------------------------
+   🧭 Header Layout & Structure
+--------------------------------*/
 .header {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--theme-green);
-  color: var(--white);
-  padding: 10px 60px; 
-  height: 60px;
-  position: sticky;
-  top: 0;
-  z-index: 1000; */
-  position: fixed;     
-  top: 0;
-  left: 0;
-  width: 100%;
-   height: 70px;  
-  
-   background: #16a34a;
-  color: white;
-  padding: 0px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;     
-   display: flex;
-  justify-content: space-between;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background-color: var(--theme-green);
+  /* color: var(--white); */
+  padding: 10px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-
-
-/* Left section (logo + title) */
+/* Left Section (Logo + Title) */
 .header-left {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
 .header-left .logo {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--white);
   border-radius: 50%;
-  background: var(--white);
-  padding: 5px;
+  padding: 4px;
 }
-
 .header-left h1 {
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--white);
 }
 
-/* Right section (language + user) */
+/* -------------------------------
+   🌐 Language Switcher
+--------------------------------*/
 .header-right {
   display: flex;
   align-items: center;
-  gap: 20px; /* space between elements */
-  margin-right: 40px; /* shift slightly left */
   position: relative;
-}
-
-/* Language icon and label */
-.lang-icon {
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  filter: brightness(0) invert(1); /* makes icon white */
-}
-
-.lang-label {
   color: var(--white);
-  font-weight: 600;
 }
-
-/* Notification icon */
-.bell-icon {
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  filter: brightness(0) invert(1);
-}
-
-/* Profile section */
-.profile-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  position: relative;
-}
-
-.profile-icon {
-  width: 32px;
+.header-right .lang {
+   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  background: var(--white);
-  padding: 4px;
+  margin-right: 8px;
+  padding: 6px;
+  border-radius: 8px;                
+  background-color: #ffffff;          
+  filter: none;                       
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
 }
-
-.user-name {
+.header-right .lang:hover {
+  background-color: #e8f5e9;      
+  transform: scale(1.05);
+}
+.lang-label {
+  margin-right: 10px;
   color: var(--white);
   font-weight: 600;
 }
 
-/* Language dropdown */
+/* Language Dropdown */
 .lang-dropdown {
   position: absolute;
-  top: 110%;
-  right: 180px;
+  top: 120%;
+  right: 100px;
   background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
-
 .lang-dropdown button {
   display: block;
   width: 100%;
   padding: 10px 16px;
-  border: none;
   background: none;
+  border: none;
   text-align: left;
-  cursor: pointer;
   color: var(--theme-green);
   font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
-
 .lang-dropdown button:hover {
-  background: rgba(22, 163, 74, 0.1);
+  background-color: rgba(25, 135, 84, 0.1);
 }
 
-/* Profile dropdown */
+/* -------------------------------
+   🔘 Login / Logout Buttons
+--------------------------------*/
+.btn {
+  background-color:#198754; ;
+  color: #ffffff !important; 
+ border: 2px solid #84bca2;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(149, 232, 193, 0.8);
+}
+
+/* Always solid button (no flicker) */
+.btn:hover {
+  background-color: var(--theme-green);
+  color: var(--white);
+  border-color: var(--theme-green-dark);
+  box-shadow: 0 0 10px rgba(25, 135, 84, 0.4);
+  transform: scale(1.02);
+}
+
+/* Optional margin for spacing */
+.ms-3 {
+  margin-left: 12px;
+}
+
+/* -------------------------------
+   🔔 Profile / Notification Icons (future ready)
+--------------------------------*/
+.bell-icon,
+.profile-icon {
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+}
+
 .profile-dropdown {
   position: absolute;
   top: 120%;
@@ -146,7 +160,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   min-width: 140px;
 }
-
 .profile-dropdown button {
   display: block;
   width: 100%;
@@ -154,24 +167,10 @@
   border: none;
   background: none;
   text-align: left;
-  cursor: pointer;
   color: var(--theme-green);
   font-weight: 600;
-}
-
-.profile-dropdown button:hover {
-  background-color: rgba(22, 163, 74, 0.1);
-}
-
-/* Login / Logout buttons */
-.login-btn,
-.logout-btn {
-  color: var(--white);
-  font-weight: 600;
   cursor: pointer;
 }
-
-.login-btn:hover,
-.logout-btn:hover {
-  text-decoration: underline;
+.profile-dropdown button:hover {
+  background-color: rgba(22, 163, 74, 0.1);
 }

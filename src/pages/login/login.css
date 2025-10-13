@@ -1,116 +1,139 @@
-
-
-
-
-.login-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  /* background: linear-gradient(90deg, #4f46e5, #3b82f6, #06b6d4); */
-}
-.login-right .logo {
-  width: 120px;   
-  height: auto;    
-  margin-bottom: 15px;
+/* Modal Header */
+.modal-header-custom {
+  background: linear-gradient(45deg, #2e7d32, #66bb6a);
+  color: white;
+  border-bottom: none;
 }
 
-.login-box {
-  background: #fff;
-  display: flex;
-  border-radius: 15px;
+/* Modal container */
+.custom-login-modal .modal-content {
+  border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  width: 750px;
-  max-width: 90%;
+  border: none;
+  transition: transform 0.3s ease-in-out;
 }
 
-
-.login-left {
-  flex: 1;
-  background: #f9fafb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
+/* Fade-in effect */
+.custom-login-modal.show .modal-content {
+  transform: scale(1);
 }
 
-.login-avatar {
-  width: 150px;
-  height: 150px;
+/* Error & Success messages */
+.error-msg {
+  font-size: 14px;
+}
+
+.text-success {
+  font-weight: 500;
+}
+
+/* Blur effect for background */
+body.modal-open .dashboard {
+  filter: blur(6px);
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Dim overlay */
+.modal-backdrop.show {
+  opacity: 0.4 !important;
+}
+
+.modal-header-custom {
+  background-color: #198754; /* green header */
+  color: white;
+  border-bottom: none;
+}
+
+.modal-logo {
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
+/* googlesingup */
 
-.login-right {
-  flex: 1.2;
-  padding: 40px;
-  text-align: center;
+
+/* 🟩 SmartGaon Green Buttons (Login / Signup) */
+.btn-success {
+  background: linear-gradient(45deg, #2e7d32, #66bb6a) !important;
+  border: none !important;
+  color: #fff !important;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
-.login-right h2 {
-  margin-bottom: 20px;
-  color: #111827;
+.btn-success:hover {
+  background: linear-gradient(45deg, #1b5e20, #4caf50) !important;
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.input-group {
+/* ⚪ Google Button (Contrast Clean Look) */
+.google-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #444;
   border: 1px solid #ddd;
-  border-radius: 25px;
-  padding: 10px 15px;
-  background: #f9f9f9;
-}
-
-.input-group .icon {
-  margin-right: 10px;
-  font-size: 14px;
-}
-
-.input-group input {
-  border: none;
-  outline: none;
-  flex: 1;
-  background: transparent;
-  font-size: 14px;
-}
-
-
-.login-btn {
-  padding: 12px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 25px;
-  background: #22c55e;
-  color: white;
-  font-size: 16px;
+  border-radius: 8px;
+  padding: 10px;
   font-weight: 600;
+  font-size: 15px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
-.login-btn:hover {
-  background: #16a34a;
+.google-btn:hover {
+  background-color: #f7f7f7;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.google-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
 }
 
 
-.login-extra {
-  margin-top: 20px;
-  font-size: 13px;
+ /* .nav-tabs .nav-link {
+  color: #333 !important; 
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+} */
+/*
+.nav-tabs .nav-link:hover {
+  color: #2e7d32 !important; 
 }
 
-.login-extra a {
-  color: #3b82f6;
-  text-decoration: none;
+
+.nav-tabs .nav-link.active {
+  color: #fff !important;
+  background-color: #2e7d32 !important; 
+  border-radius: 6px 6px 0 0;
+  border: none;
 }
 
-.login-extra a:hover {
-  text-decoration: underline;
+
+.nav-tabs {
+  border-bottom: 2px solid #e0e0e0;
+} */
+
+.nav-tabs .nav-link {
+  color: black !important; 
+  font-weight: 600;
+  /* border: none; */
+  background: none !important;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  color: #2e7d32 !important; 
+  background-color: transparent !important;
+  border-bottom: 3px solid #2e7d32 !important;
+  border-radius: 0;
 }
