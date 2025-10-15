@@ -1,0 +1,98 @@
+.sarkari-container {
+  font-family: "Poppins", sans-serif;
+  background: #f5f8f5;
+  color: #222;
+}
+
+/* Header */
+.sarkari-header {
+  background: #ffffff; /* White header */
+  color: #1f8a38;
+  padding: 15px 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+.sarkari-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.sarkari-logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Intro */
+.sarkari-intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+.sarkari-intro h1 {
+  color: #1f8a38;
+  margin-bottom: 10px;
+}
+
+/* Grid Cards */
+.sarkari-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+}
+.sarkari-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.sarkari-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.green {
+  color: #1f8a38;
+}
+.purple {
+  color: #5233d2;
+}
+.sun {
+  color: #ffb300;
+}
+.sarkari-card a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.link-green {
+  color: #1f8a38;
+}
+.link-purple {
+  color: #5233d2;
+}
+.link-sun {
+  color: #ffb300;
+}
+
+/* Quick Actions */
+.sarkari-actions {
+  background: #fff;
+  border-top: 1px solid #e8f5ea;
+  padding: 40px 20px;
+  text-align: center;
+}
+.sarkari-actions h2 {
+  font-size: 1.8rem;
+  color: #1f8a38;
+  margin-bottom: 20px;
+}
+.sarkari-buttons button {
+  margin: 8px;
+  padding: 10px 20px;
+  background: #1f8a38;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.sarkari-buttons button:hover {
+  background: #17682a;
+}

@@ -1,0 +1,144 @@
+.gramdoctor-container {
+  font-family: "Poppins", sans-serif;
+  background: #f5f8f5;
+  color: #222;
+}
+
+/* Header */
+.gd-header {
+  background: #ffffff;
+  color: #1f8a38;
+  padding: 15px 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+.gd-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gd-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.gd-logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Intro */
+.gd-intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+.gd-intro h1 {
+  color: #1f8a38;
+  margin-bottom: 10px;
+}
+
+/* Grid Cards */
+.gd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+}
+.gd-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.gd-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.green {
+  color: #1f8a38;
+}
+.purple {
+  color: #5233d2;
+}
+.sun {
+  color: #ffb300;
+}
+.gd-card a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.link-green {
+  color: #1f8a38;
+}
+.link-purple {
+  color: #5233d2;
+}
+.link-sun {
+  color: #ffb300;
+}
+
+/* Pregnancy Tracker */
+.gd-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+.gd-section input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  margin: 10px;
+}
+.gd-section button {
+  background: #1f8a38;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.gd-section button:hover {
+  background: #17682a;
+}
+.purple-bg {
+  background: #f8f2ff;
+}
+
+/* Results */
+.gd-result {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Symptom Checker */
+.gd-symptoms {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+/* Emergency */
+.gd-emergency {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+.gd-emergency-buttons button {
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #1f8a38;
+  color: #fff;
+  cursor: pointer;
+}
+.gd-emergency-buttons button.red {
+  background: #d32f2f;
+}

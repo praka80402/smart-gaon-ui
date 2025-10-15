@@ -351,8 +351,13 @@ import SchoolSubject from "./pages/Shiksha Sahayak/SchoolSubject";
 
 
 import UserDashboard from "./pages/userProfile/UserDashboard";
-import ProfilePage from "./pages/userProfile/ProfilePage";
+import MyProfile from "./pages/userProfile/MyProfile/MyProfile";
+// import ProfilePage from "./pages/userProfile/ProfilePage";
 import UserHeader from "./pages/userProfile/components/Header";
+import GramDoctor from "./pages/GramDoctor/GramDoctor";
+import KishanMitra from "./pages/KishanMitra/KishanMitra";
+import SarkariSeva from "./pages/sarkari-seva/SarkariSeva";
+import GaonConnect from "./pages/GaonConnect/GaonConnect";
 
 function App() {
   // 🔑 Global login modal & authentication state
@@ -396,6 +401,15 @@ function App() {
           />
 
           <Route
+  path="/gaon-connect"
+  element={
+    <PrivateRoute>
+      <GaonConnect />
+    </PrivateRoute>
+  }
+/>
+
+          <Route
             path="/weather-report"
             element={
               <PrivateRoute>
@@ -403,6 +417,32 @@ function App() {
               </PrivateRoute>
             }
           />
+          <Route
+            path="/sarkari-seva"
+            element={
+              <PrivateRoute>
+                <SarkariSeva />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
+  path="/gram-doctor"
+  element={
+    <PrivateRoute>
+      <GramDoctor />
+    </PrivateRoute>
+  }
+/>
+      <Route
+  path="/kishanMitra"
+  element={
+    <PrivateRoute>
+      <KishanMitra />
+    </PrivateRoute>
+  }
+/>
+    
 
           <Route
             path="/shiksha-sahayak/school-learning"
@@ -442,14 +482,23 @@ function App() {
           />
 
           {/* 👤 User Profile Page */}
-          <Route
-            path="/profile"
+          {/* <Route
+            path="/MyProfile"
             element={
               <PrivateRoute>
                 <ProfilePage />
               </PrivateRoute>
             }
+          /> */}
+           <Route
+            path="/profile"
+            element={
+              <PrivateRoute>
+                <MyProfile />
+              </PrivateRoute>
+            }
           />
+
 
           {/* 🚫 Optional: Redirect /login route to home if already logged in */}
           <Route

@@ -1,0 +1,57 @@
+.gaonconnect-container {
+  font-family: "Poppins", sans-serif;
+  background: #f5f8f5;
+  min-height: 100vh;
+}
+
+/* Header */
+.gaonconnect-header {
+  background: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 15px 30px;
+  color: #1f8a38;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gaonconnect-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.gaonconnect-logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Tabs */
+.gaonconnect-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #e8f5ea;
+  padding: 10px 0;
+  gap: 10px;
+}
+.gaonconnect-nav button {
+  background: white;
+  border: 1px solid #1f8a38;
+  color: #1f8a38;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.gaonconnect-nav button.active,
+.gaonconnect-nav button:hover {
+  background: #1f8a38;
+  color: white;
+}
+
+/* Content */
+.gaonconnect-content {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
