@@ -38,8 +38,8 @@ export default function Sidebar() {
     { name: "Gram Doctor", path: "/gram-doctor" },
      { name: "Kisan Mitra", path: "/kishanMitra" },
     { name: "Gaon Connect", path: "/gaon-connect" },
-    { name: "Seva Bazar", path: "/seva-bazar" },
-    { name: "Gaon Bazar", path: "/gaon-bazar" },
+    { name: "Seva Bazar", path: "/sewa-bazaar" },
+    { name: "Gaon Bazar", path: "/gaon-bazaar" },
     { name: "Weather Forecast", path: "/weather-forecast" },
    { name: "Donation", path: "/donation" },
   ];

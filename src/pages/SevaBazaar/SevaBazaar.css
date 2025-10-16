@@ -1,0 +1,255 @@
+.sewa-container {
+  padding: 20px;
+  text-align: center;
+}
+.sewa-dashboard {
+  background-color: #f8faf8;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  /* text-align: center; */
+}
+.sewa-header {
+  
+  margin-bottom: 25px;
+}
+.sewa-title {
+  color: #046307;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* .title {
+  font-size: 2rem;
+  color: #1a5d1a;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 700;
+} */
+.sewa-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: #eaf6ea;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #cde6cd;
+}
+/* .subtitle {
+  color: gray;
+  text-align: center;
+  margin-bottom: 20px;
+} */
+
+.sewa-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.sewa-tabs button {
+  border: 1.5px solid #046307;
+  background: #fff;
+  color: #046307;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.sewa-tabs button:hover {
+  background-color: #e2f1e2;
+}
+
+.sewa-tabs button.active {
+  background-color: #046307;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* -----------------------------
+   Dynamic Content Section
+----------------------------- */
+.sewa-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+/* -----------------------------
+   Intro (Home Section)
+----------------------------- */
+.sewa-intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.sewa-intro h2 {
+  color: #046307;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sewa-intro p {
+  color: #444;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* -----------------------------
+   Responsive Design
+----------------------------- */
+@media (max-width: 768px) {
+  .sewa-tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sewa-tabs button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sewa-section {
+    padding: 18px;
+  }
+
+  .sewa-title {
+    font-size: 22px;
+  }
+}
+.sewa-card {
+  background-color: #1a5d1a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sewa-card:hover {
+  background-color: #2d7a2d;
+}
+
+.section-title {
+  color: #1a5d1a;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.search-bar, .input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.provider-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.badge {
+  background-color: #e6f7e6;
+  color: #2d7a2d;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.no-data {
+  color: gray;
+}
+
+.sewa-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  background: #f9fafb;
+}
+
+.sewa-nav {
+  background: #1a5d1a;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px;
+}
+
+.sewa-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sewa-nav a:hover {
+  background: #2e7a2e;
+}
+
+.sewa-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sewa-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.sewa-links button {
+  background: #046307;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sewa-links button:hover,
+.sewa-links button.active {
+  background: #059212;
+}
+
+.sewa-section {
+  margin-top: 20px;
+  text-align: left;
+}

@@ -6,7 +6,7 @@ const states = [
   { name: "Maharashtra", users: "1.5M+ Users" },
   { name: "Bihar", users: "1.2M+ Users" },
   { name: "Rajasthan", users: "800K+ Users" },
-  { name: "Andhra Pradesh", users: "700K+ Users" },
+  
   
 ];
 

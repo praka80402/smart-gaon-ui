@@ -1,48 +1,43 @@
+
+
 .reach-section {
-  background: #16a34a; 
-  padding: 50px 20px;
+  background-color: #fff;
+  padding: 70px 0;
   text-align: center;
-  color: #fff;
-  font-family: "Segoe UI", sans-serif;
 }
 
 .reach-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 40px;
 }
 
+
 .reach-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  /* background-color: white; */
-   /* color: #16a34a; */
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; 
+  padding: 0 20px;
 }
 
 .reach-card {
-  background: rgba(255, 255, 255, 0.15); 
-  padding: 25px;
+  background-color: #27ae60;
+  color: white;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s, background 0.3s;
+  width: 220px;      
+  height: 120px;     
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;   
 }
 
 .reach-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.reach-card h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.reach-card p {
-  font-size: 14px;
-  font-weight: 600;
-  color: white;
+  transform: scale(1.05);
 }

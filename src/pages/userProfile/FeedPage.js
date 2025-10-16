@@ -143,10 +143,7 @@ export default function FeedPage() {
   return (
     <main className="feed-main">
       <div className="welcome-banner">
-        {/* 👋 Welcome to <strong>SmartGaon AI</strong> <br />
-        <small>
-          Share updates, offers, and experiences with your village & nearby farmers.
-        </small> */}
+       
       👋{" "}
         <strong>
           {user

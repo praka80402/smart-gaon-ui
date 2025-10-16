@@ -1,133 +1,81 @@
-// import React from "react";
-// import "./KishanMitra.css";
-// // import logo from "../../assets/logo-1.png"; // ✅ Update your logo path
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./KishanMitra.css";
 
-// export default function KishanMitra() {
-//   const schemes = [
-//     {
-//       icon: "🏠",
-//       title: "PM Awas Yojana",
-//       color: "green",
-//       links: ["Check Eligibility", "Apply Online", "Track Application"],
-//     },
-//     {
-//       icon: "🌾",
-//       title: "PM Kisan Samman Nidhi",
-//       color: "green",
-//       links: ["Check Eligibility", "Apply Online", "Track Payment"],
-//     },
-//     {
-//       icon: "💰",
-//       title: "Jan Dhan Yojana",
-//       color: "purple",
-//       links: ["Check Eligibility", "Apply Online", "Find Bank Branch"],
-//     },
-//     {
-//       icon: "🏥",
-//       title: "Ayushman Bharat",
-//       color: "green",
-//       links: ["Check Eligibility", "Apply for Card", "Find Hospital"],
-//     },
-//     {
-//       icon: "⚡",
-//       title: "Solar Rooftop Scheme",
-//       color: "sun",
-//       links: ["Check Eligibility", "Apply Online", "Calculate Subsidy"],
-//     },
-//     {
-//       icon: "👩‍💼",
-//       title: "Mudra Loan Yojana",
-//       color: "green",
-//       links: ["Check Eligibility", "Apply Online", "Track Application"],
-//     },
-//     {
-//       icon: "🍽️",
-//       title: "Ration Card Services",
-//       color: "green",
-//       links: ["Apply for New Card", "Update Details", "Check Status"],
-//     },
-//     {
-//       icon: "🚜",
-//       title: "Krishi Yantra Subsidy",
-//       color: "green",
-//       links: ["Check Eligibility", "Apply Online", "View Approved List"],
-//     },
-//     {
-//       icon: "👶",
-//       title: "Maternity Benefit Scheme",
-//       color: "purple",
-//       links: ["Check Eligibility", "Apply Online", "Track Payment"],
-//     },
-//     {
-//       icon: "🎓",
-//       title: "Education Scholarships",
-//       color: "green",
-//       links: ["Check Eligibility", "Apply Online", "Track Application"],
-//     },
-//     {
-//       icon: "🏛️",
-//       title: "Pension Schemes",
-//       color: "green",
-//       links: ["Old Age Pension", "Widow Pension", "Disability Pension"],
-//     },
-//     {
-//       icon: "💡",
-//       title: "Skill Development",
-//       color: "sun",
-//       links: ["Check Courses", "Apply for Training", "Find Centers"],
-//     },
-//   ];
+export default function KisanMitraHome() {
+  const navigate = useNavigate();
 
-//   return (
-//     <div className="sarkari-container">
-//       {/* Header */}
-//       <header className="sarkari-header">
-//         <div className="sarkari-header-content">
-//           <div className="sarkari-header-left">
-//             {/* <img src={logo} alt="Smart Gaon Logo" className="sarkari-logo" /> */}
-//             <h2>Government Schemes Portal</h2>
-//           </div>
-//         </div>
-//       </header>
+  const features = [
+    {
+      icon: "🌾",
+      title: "Crop Monitoring",
+      desc: "Upload crop photos and get health or pest analysis tips.",
+      path: "/kisan-mitra/crop-monitoring",
+    },
+    {
+      icon: "🧪",
+      title: "Soil & Crop Testing",
+      desc: "Submit samples and view test results for better yield.",
+      path: "/kisan-mitra/soil-testing",
+    },
+    {
+      icon: "📷",
+      title: "Quality Testing",
+      desc: "Upload produce photos to get AI-based grading advice.",
+      path: "/kisan-mitra/quality-testing",
+    },
+    {
+      icon: "🌱",
+      title: "Organic Farming",
+      desc: "Learn organic farming practices and save steps locally.",
+      path: "/kisan-mitra/organic-farming",
+    },
+    {
+      icon: "🤝",
+      title: "Contract Farming",
+      desc: "Explore contract opportunities and connect with buyers.",
+      path: "/kisan-mitra/contract-farming",
+    },
+    {
+      icon: "🎓",
+      title: "Farmer Training",
+      desc: "Watch tutorials and access training topics for new techniques.",
+      path: "/kisan-mitra/farmer-training",
+    },
+    {
+      icon: "💬",
+      title: "Ask Question (AI)",
+      desc: "Speak or type your query — get instant AI assistance.",
+      path: "/kisan-mitra/ask-question",
+    },
+    {
+      icon: "📥",
+      title: "Download Offline Tools",
+      desc: "Access and download resources for offline use.",
+      path: "/kisan-mitra/offline-tools",
+    },
+  ];
 
-//       {/* Page Intro */}
-//       <section className="sarkari-intro">
-//         <h1>Sarkari Yojana</h1>
-//         <p>
-//           Access all government schemes, check your eligibility, and apply
-//           online for various welfare programs designed for rural development and
-//           citizen empowerment.
-//         </p>
-//       </section>
+  return (
+    <div className="kisan-home">
+      <h1 className="kisan-title">🚜 Kisan Mitra</h1>
+      <p className="kisan-subtitle">
+        Empowering farmers with smart tools, AI insights, and digital training to boost productivity and sustainability.
+      </p>
 
-//       {/* Scheme Cards Grid */}
-//       <div className="sarkari-grid">
-//         {schemes.map((scheme, i) => (
-//           <div className="sarkari-card" key={i}>
-//             <div className={`sarkari-icon ${scheme.color}`}>{scheme.icon}</div>
-//             <h3 className="sarkari-card-title">{scheme.title}</h3>
-//             <ul>
-//               {scheme.links.map((link, j) => (
-//                 <li key={j}>
-//                   <a href="#!" className={`link-${scheme.color}`}>
-//                     {link}
-//                   </a>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-//         ))}
-//       </div>
-
-//       {/* Quick Actions */}
-//       <section className="sarkari-actions">
-//         <h2>Quick Actions</h2>
-//         <div className="sarkari-buttons">
-//           <button>Check All Eligibility</button>
-//           <button>My Applications</button>
-//           <button>Help & Support</button>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
+      <div className="kisan-grid">
+        {features.map((item, index) => (
+          <div
+            key={index}
+            className="kisan-card"
+            onClick={() => navigate(item.path)}
+          >
+            <div className="kisan-icon">{item.icon}</div>
+            <h3>{item.title}</h3>
+            <p>{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

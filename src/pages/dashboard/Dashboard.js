@@ -6,6 +6,7 @@ import ImpactSection from "./ImpactSection";
 // import "./Dashboard.css";
 import "../../App.css";
 import ConnectingVillage from "./ConnectingVillage";
+import SuccessStory from "./SuccessStory";
 // function Dashboard() {
 //   return (
      
@@ -39,13 +40,15 @@ import ConnectingVillage from "./ConnectingVillage";
 
 function Dashboard({ setShowLoginModal }) {
   return (
-    <div className="dashboard">
+     <div className="dashboard">
+
+     
       
       <Slideimage />
       <ImpactSection />
       <section className="dashboard-section impact-layout">
         <div className="impact-left">
-          {/* ✅ Pass down to ServiceSection */}
+        
           <ServiceSection setShowLoginModal={setShowLoginModal} />
         </div>
         <div className="impact-right">
@@ -53,9 +56,16 @@ function Dashboard({ setShowLoginModal }) {
         </div>
       </section>
       <ConnectingVillage />
+       <SuccessStory />
     </div>
   );
 }
+
+
+
+
+
+
 
 export default Dashboard;
 

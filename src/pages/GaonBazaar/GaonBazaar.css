@@ -1,0 +1,532 @@
+/* .gaon-dashboard {
+ 
+  padding: 20px;
+  background: #f7fdf7;
+  min-height: 80vh;
+}
+
+.gaon-header {
+  background-color: #f8faf8;
+  color: #165c1e;
+  padding: 20px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.gaon-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.gaon-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.gaon-tabs button {
+  background-color: #1a5d1a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gaon-tabs button.active,
+.gaon-tabs button:hover {
+  background-color: #257825;
+}
+
+.gaon-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 0 auto;
+  max-width: 900px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gaon-intro h2 {
+  font-size: 28px;
+  color: #1a5d1a;
+  margin-bottom: 10px;
+}
+
+.gaon-intro p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.gaon-home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gaon-home-buttons button {
+  background-color: #1a5d1a;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.gaon-home-buttons button:hover {
+  background-color: #2e7a2e;
+}
+
+
+.gaon-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.search-options,
+.listings {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sub-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background: #f9f9f9;
+  width: 220px;
+}
+
+.sub-card button {
+  background: #1a5d1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.sub-card button:hover {
+  background: #2e7a2e;
+}
+
+.submit-btn, .download-btn {
+  margin-top: 20px;
+  background: #1a5d1a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-btn:hover, .download-btn:hover {
+  background: #2e7a2e;
+} */
+
+
+
+/* =======================
+   🌾 GAON BAZAAR DASHBOARD
+   ======================= */
+
+.gaon-dashboard {
+  padding: 20px;
+  background: #f7fdf7;
+  min-height: 80vh;
+}
+
+/* ---------- HEADER ---------- */
+.gaon-header {
+  background-color: #f8faf8;
+  color: #165c1e;
+  padding: 20px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+.gaon-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* ---------- TABS ---------- */
+.gaon-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.gaon-tabs button {
+  background-color: #1a5d1a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.gaon-tabs button.active,
+.gaon-tabs button:hover {
+  background-color: #257825;
+}
+
+/* ---------- MAIN SECTION ---------- */
+.gaon-section {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin: 0 auto;
+  max-width: 1000px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ---------- INTRO SECTION ---------- */
+.gaon-intro h2 {
+  font-size: 28px;
+  color: #1a5d1a;
+  margin-bottom: 10px;
+}
+
+.gaon-intro p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.gaon-home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gaon-home-buttons button {
+  background-color: #1a5d1a;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.gaon-home-buttons button:hover {
+  background-color: #2e7a2e;
+}
+
+/* =======================
+   🛠️ CREATE LISTING SECTION
+   ======================= */
+
+/* .create-listing-container {
+    display: flex;
+  flex-direction: column;       
+  align-items: center;          
+  gap: 20px;                     
+  margin-top: 30px;
+} */
+ .create-listing-container {
+  display: flex !important;
+  flex-direction: row !important;  /* 🔥 Forces vertical stacking */
+  align-items: flex-start !important;     /* 🔥 Centers horizontally */
+  justify-content: centre;
+  gap: 40px;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 420px;                   /* 👈 Keeps layout neat */
+}
+
+
+.sub-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  /* padding: 20px;
+  width: 260px; */
+  padding: 20px 25px;
+  width: 420px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.sub-card:hover {
+  transform: translateY(-4px);
+  border-color: #1a5d1a;
+}
+
+.sub-card h4 {
+  color: #1a5d1a;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ---------- BUTTONS ---------- */
+.sub-card button {
+  background: #1a5d1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.sub-card button:hover {
+  background: #257825;
+}
+
+/* ---------- FILE & INPUTS ---------- */
+.sub-card input[type="file"] {
+  border: none;
+  background: #f3f3f3;
+  padding: 8px;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sub-card input[type="text"],
+.sub-card input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.sub-card input:focus {
+  border-color: #1a5d1a;
+}
+
+/* ---------- SUBMIT BUTTON ---------- */
+.submit-btn {
+  margin-top: 35px;
+  background: #1a5d1a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #257825;
+  transform: translateY(-2px);
+}
+
+/* =======================
+   🧾 OTHER SECTIONS
+   ======================= */
+
+.search-options,
+.listings {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+/* ---------- LISTING CARDS ---------- */
+.listing-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background: #f9f9f9;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.listing-card h4 {
+  color: #1a5d1a;
+  margin-bottom: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.actions button {
+  background: #1a5d1a;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #257825;
+}
+
+/* ---------- DOWNLOAD BUTTON ---------- */
+.download-btn {
+  margin-top: 20px;
+  background: #1a5d1a;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  background: #2e7a2e;
+}
+
+/* =======================
+   📱 RESPONSIVE DESIGN
+   ======================= */
+@media (max-width: 768px) {
+  .create-listing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub-card {
+    width: 90%;
+  }
+
+  .gaon-tabs {
+    gap: 10px;
+  }
+}
+
+/* ---------------- */
+
+.create-listing-wrapper {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9fdf9;
+  min-height: 80vh;
+}
+
+/* 🟩 Title */
+.create-title {
+  color: #1a5d1a;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* 🧱 Card Container - Horizontal Layout */
+.create-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap; /* ✅ Makes it responsive */
+  margin-bottom: 40px;
+}
+
+/* 🧩 Card Box Style */
+.create-card-container .sub-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 25px 20px;
+  width: 280px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.create-card-container .sub-card:hover {
+  transform: translateY(-4px);
+  border-color: #1a5d1a;
+}
+
+/* 🟩 Headings Inside Each Card */
+.create-card-container h4 {
+  color: #1a5d1a;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* 🧠 Inputs */
+.create-card-container input[type="file"],
+.create-card-container input[type="text"],
+.create-card-container input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.create-card-container input:focus {
+  border-color: #1a5d1a;
+}
+
+/* 🟢 Buttons Inside Cards */
+.create-card-container button {
+  background: #1a5d1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.create-card-container button:hover {
+  background: #257825;
+}
+
+/* ✅ Submit Button */
+.create-submit-btn {
+  background-color: #1a5d1a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.create-submit-btn:hover {
+  background-color: #257825;
+  transform: translateY(-2px);
+}

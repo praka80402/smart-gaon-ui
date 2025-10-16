@@ -18,7 +18,7 @@ const iconsMap = {
   "Shiksha Sahayak": shikshaIcon,
   "Gram Doctor": gramIcon,
   "Kishan Mitra": kishanIcon,
-  "Gaon Connect": gaonConnectIcon,
+  "My Village": gaonConnectIcon,
   "Gaon Bazar": gaonBazarIcon,
   "Seva Bazar": sevaBazarIcon,
   "Weather Report": weatherIcon,

@@ -358,6 +358,11 @@ import GramDoctor from "./pages/GramDoctor/GramDoctor";
 import KishanMitra from "./pages/KishanMitra/KishanMitra";
 import SarkariSeva from "./pages/sarkari-seva/SarkariSeva";
 import GaonConnect from "./pages/GaonConnect/GaonConnect";
+// import SevaBazaarDashboard from "./pages/SevaBazaar/SevaBazaarDashboard";
+import SevaBazaarHome from "./pages/SevaBazaar/SevaBazaarHome";
+import GaonBazaarDashboard from "./pages/GaonBazaar/GaonBazaarDashboard";
+import GaonBazaarHome from "./pages/GaonBazaar/GaonBazaarHome";
+
 
 function App() {
   // 🔑 Global login modal & authentication state
@@ -434,14 +439,32 @@ function App() {
     </PrivateRoute>
   }
 />
-      <Route
+       <Route
   path="/kishanMitra"
   element={
     <PrivateRoute>
       <KishanMitra />
     </PrivateRoute>
   }
+/>    
+            <Route
+  path="/sewa-bazaar"
+  element={
+    <PrivateRoute>
+    <SevaBazaarHome/>
+    </PrivateRoute>
+  }
 />
+        {/* 🛒 Gaon Bazaar */}
+          <Route
+            path="/gaon-bazaar"
+            element={
+              <PrivateRoute>
+                <GaonBazaarHome />
+              </PrivateRoute>
+            }
+          />
+
     
 
           <Route
