@@ -1,92 +1,4 @@
-/* 
-.page-container {
-  margin-top: 50px;
-  padding: 40px;
-}
 
-
-.page-title, 
-.page-text {
-  text-align: center;
-}
-
-.feature-grid {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  justify-items: center;
-  align-items: stretch;
-}
-
-
-.feature-card {
-  background: #ffffff;
-  width: 100%;
-  max-width: 340px;
-  min-height: 190px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
-  cursor: pointer;
-  text-align: left;
-  border: 1px solid #e5e7eb;
-}
-
-.feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-
-.feature-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #16a34a;
-  margin-bottom: 8px;
-}
-
-.feature-desc {
-  font-size: 14px;
-  color: #374151;
-  flex-grow: 1;
-  line-height: 1.5;
-}
-
-.feature-link {
-  font-size: 14px;
-  font-weight: 600;
-  color: #1d4ed8;
-  margin-top: 10px;
-}
-
-
-.feature-card a,
-.feature-card a:visited,
-.feature-card a:hover {
-  text-decoration: none;
-}
-
-
-.back-link {
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: 600;
-  color: #000807;
-  text-decoration: none;
-  position: absolute;
-  top: -1px;
-  left: 20px;
-}
-
-.back-link:hover {
-  color: #0f3fad;
-} */
-
-/* Header Bar */
 .gd-header {
   background: #ffffff;
   color: #1f8a38;
@@ -114,10 +26,10 @@
   text-decoration: underline;
 }
 
-/* Page Content */
+
 .shiksha-page {
   text-align: center;
-  /* padding: 40px; */
+
   font-family: "Segoe UI", sans-serif;
   background: #f8fbf8;
 }
@@ -134,7 +46,6 @@
   margin-bottom: 40px;
 }
 
-/* Grid Layout */
 .shiksha-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -144,7 +55,7 @@
   align-items: stretch;
 }
 
-/* Card Styles */
+
 .shiksha-card {
   background: #fff;
   border: 1px solid #e5e7eb;

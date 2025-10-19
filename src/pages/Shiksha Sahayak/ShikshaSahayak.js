@@ -110,13 +110,7 @@ export default function ShikshaSahayak() {
 
   return (
     <div className="shiksha-page">
-      {/* Header Section */}
-      {/* <header className="shiksha-header">
-         <div className="header-left">
-          <h2>Shiksha Sahayak - Education Portal</h2>
-        </div>
-        
-      </header> */}
+     
 
       <header className="gd-header">
         <div className="gd-header-content">

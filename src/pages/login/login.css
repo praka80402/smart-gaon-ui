@@ -137,3 +137,33 @@ body.modal-open .dashboard {
   border-bottom: 3px solid #2e7d32 !important;
   border-radius: 0;
 }
+
+
+/* Make modal background fully solid */
+.modal-container, 
+.auth-modal, 
+.login-box {
+  background: #ffffff !important;  /* solid white */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  z-index: 9999;
+}
+
+/* Dim background overlay */
+.modal-overlay, 
+.backdrop {
+  background: rgba(0,0,0,0.4); /* subtle dark backdrop */
+  backdrop-filter: none; /* disable blur effect */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9998;
+}
+
+/* Ensure modal sits above */
+.modal-container {
+  position: relative;
+  z-index: 9999;
+}
