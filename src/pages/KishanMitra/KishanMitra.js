@@ -57,8 +57,18 @@ export default function KisanMitraHome() {
   ];
 
   return (
+     
+
     <div className="kisan-home">
-      <h1 className="kisan-title">🚜 Kisan Mitra</h1>
+         <header className="gd-header">
+        <div className="gd-header-content">
+          <div className="gd-header-left">
+            {/* <img src={logo} alt="Smart Gaon Logo" className="gd-logo" /> */}
+             <h2>Kisan Mitra</h2>
+          </div>
+        </div>
+      </header>
+      <h1 className="kisan-title">🚜 Check Your Product</h1>
       <p className="kisan-subtitle">
         Empowering farmers with smart tools, AI insights, and digital training to boost productivity and sustainability.
       </p>

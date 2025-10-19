@@ -13,6 +13,8 @@ const ServiceSection = ({ setShowLoginModal }) => {
         <ServiceCard name="Gaon Bazar"to="/gaon-bazaar" setShowLoginModal={setShowLoginModal} />
       <ServiceCard name="Seva Bazar" to="/sewa-bazaar" setShowLoginModal={setShowLoginModal} />
       <ServiceCard name="Weather Report" to="/weather-report" setShowLoginModal={setShowLoginModal} />
+      <ServiceCard name="Donation" to="/donation"  setShowLoginModal={setShowLoginModal} />
+
     </section>
   );
 };

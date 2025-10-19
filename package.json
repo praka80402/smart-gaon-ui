@@ -16,6 +16,7 @@
     "chart.js": "^4.5.0",
     "i18next": "^21.10.0",
     "jspdf": "^3.0.3",
+    "lucide-react": "^0.546.0",
     "pdfjs-dist": "^5.4.296",
     "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",

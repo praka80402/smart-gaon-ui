@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   
   background-color: #f8f9fa;
@@ -53,3 +53,284 @@ body {
     height: 400px;
   }
 }
+
+
+.ncert-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+
+.back-header {
+  width: 100%;
+  padding: 12px 25px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+.back-arrow {
+  color: #000;            
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  background: none;        
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.back-arrow:hover {
+  color: #2563eb;          
+  transform: translateX(-3px);
+}
+
+
+.ncert-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+} */
+
+/* ============ PAGE BASE ============ */
+.ncert-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding: 20px 40px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ============ BACK BUTTON ============ */
+.back-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.back-arrow {
+  color: #000;
+  font-weight: 600;
+  font-size: 30px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.back-arrow:hover {
+  color: #1f8a38; 
+  transform: translateX(-3px);
+}
+
+/* ============ TITLES & TEXT ============ */
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.text-muted {
+  color: #6b7280 !important;
+}
+
+/* ============ FILTER DROPDOWN SECTION ============ */
+.filters {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-select {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  transition: 0.2s ease;
+}
+
+.form-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+/* ============ CHAPTER LIST ============ */
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.thumbnail-card {
+  cursor: pointer;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  background: #fff;
+}
+
+.thumbnail-card:hover {
+  transform: translateY(-3px);
+  border-color: #2563eb;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+}
+
+.thumbnail-card .card-body {
+  padding: 15px;
+}
+
+.thumbnail-img {
+  font-weight: 600;
+  font-size: 15px;
+  color: #111827;
+}
+
+/* ============ PDF VIEWER SECTION ============ */
+.controls {
+  margin-bottom: 10px;
+}
+
+#pdfIframe {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* Empty viewer placeholder */
+#pdfViewer {
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 60px 0;
+  color: #9ca3af;
+  background: #fff;
+}
+
+/* ============ BUTTONS ============ */
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.btn-outline-success:hover {
+  background-color: #16a34a;
+  color: #fff;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+@media (max-width: 768px) {
+  .ncert-page {
+    padding: 15px 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .col-md-4,
+  .col-md-8 {
+    width: 100%;
+  }
+
+  #pdfIframe {
+    height: 400px;
+  }
+}
+
+/* Black bordered PDF container */
+.pdf-card {
+  border: 2px solid #000; /* black border */
+  border-radius: 10px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust title inside black box */
+.pdf-card h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+/* Buttons inside the black-bordered box */
+.pdf-card .btn {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: 0.2s ease;
+}
+
+
+/* Black header bar for PDF viewer */
+.pdf-viewer-section {
+  border: 1px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-header-dark {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pdf-header-dark h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pdf-header-dark .controls {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons in dark header */
+.pdf-header-dark .btn {
+  background: #2563eb;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.pdf-header-dark .btn:hover {
+  background: #1f8a38;
+  color: #fff;
+}
+
+.pdf-header-dark .btn:disabled {
+  background: #333;
+  color: #999;
+  cursor: not-allowed;
+}
+

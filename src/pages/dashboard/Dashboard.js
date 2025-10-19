@@ -7,35 +7,7 @@ import ImpactSection from "./ImpactSection";
 import "../../App.css";
 import ConnectingVillage from "./ConnectingVillage";
 import SuccessStory from "./SuccessStory";
-// function Dashboard() {
-//   return (
-     
-//     <div className="dashboard">
-//       {/* Slideshow */}
-//       <Slideimage />
 
-//       {/* Our Impact */}
-//       <ImpactSection />
-
-//       {/* Services + Weather */}
-//       <section className="dashboard-section impact-layout">
-//         <div className="impact-left">
-//           <ServiceSection />
-//         </div>
-//         <div className="impact-right">
-//           <Weatherdashboard/>
-//         </div>
-//       </section>
-
-//       {/* Reach */}
-//       {/* <section className="reach-section">
-//         <h2>Our Reach Across States</h2>
-//       </section> */}
-//        <ConnectingVillage />   {/* ✅ imported component */}
-    
-//     </div>
-//   );
-// }
 
 
 function Dashboard({ setShowLoginModal }) {

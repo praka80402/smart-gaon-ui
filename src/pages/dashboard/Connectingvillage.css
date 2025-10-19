@@ -1,7 +1,5 @@
-
-
 .reach-section {
-  background-color: #fff;
+  background-color: #eaf7ec;
   padding: 70px 0;
   text-align: center;
 }
@@ -13,31 +11,45 @@
   margin-bottom: 40px;
 }
 
-
+/* ✅ Proper grid alignment */
 .reach-grid {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   gap: 30px;
-  flex-wrap: wrap; 
+  flex-wrap: nowrap;  /* keeps all in one row */
+  overflow-x: hidden; /* removes scrollbar */
   padding: 0 20px;
 }
 
+/* ✅ Card styling */
 .reach-card {
   background-color: #27ae60;
   color: white;
   border-radius: 12px;
-  width: 220px;      
-  height: 120px;     
+  width: 220px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
-  flex-shrink: 0;   
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .reach-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
+
+.reach-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.reach-card p {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+

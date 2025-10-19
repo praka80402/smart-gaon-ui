@@ -6,8 +6,7 @@ const states = [
   { name: "Maharashtra", users: "1.5M+ Users" },
   { name: "Bihar", users: "1.2M+ Users" },
   { name: "Rajasthan", users: "800K+ Users" },
-  
-  
+  { name: "Madhya Pradesh", users: "900K+ Users" }, 
 ];
 
 export default function ConnectingVillage() {
@@ -25,3 +24,4 @@ export default function ConnectingVillage() {
     </section>
   );
 }
+

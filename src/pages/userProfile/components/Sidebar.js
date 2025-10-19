@@ -40,7 +40,7 @@ export default function Sidebar() {
     { name: "Gaon Connect", path: "/gaon-connect" },
     { name: "Seva Bazar", path: "/sewa-bazaar" },
     { name: "Gaon Bazar", path: "/gaon-bazaar" },
-    { name: "Weather Forecast", path: "/weather-forecast" },
+    { name: "Weather Forecast", path: "/weather-report" },
    { name: "Donation", path: "/donation" },
   ];
 

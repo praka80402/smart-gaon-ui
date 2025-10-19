@@ -362,6 +362,7 @@ import GaonConnect from "./pages/GaonConnect/GaonConnect";
 import SevaBazaarHome from "./pages/SevaBazaar/SevaBazaarHome";
 import GaonBazaarDashboard from "./pages/GaonBazaar/GaonBazaarDashboard";
 import GaonBazaarHome from "./pages/GaonBazaar/GaonBazaarHome";
+import Donation from "./pages/Donation/Donation";
 
 
 function App() {
@@ -429,7 +430,15 @@ function App() {
                 <SarkariSeva />
               </PrivateRoute>
             }
-          />
+          />  
+              <Route
+                path="/donation"
+                     element={
+                  <PrivateRoute>
+                  <Donation />
+               </PrivateRoute>
+                  }
+                 /> 
 
           <Route
   path="/gram-doctor"
@@ -536,9 +545,10 @@ function App() {
           />
         </Routes>
 
-        {/* 🤖 Chatbot & Footer always visible */}
+       
         <ChatBot />
-        <Footer />
+        <Footer setShowLoginModal={setShowLoginModal} />
+        {/* <Footer /> */}
 
         {/* 🟢 Global Login Modal (accessible from anywhere) */}
         <LoginPage

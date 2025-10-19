@@ -1,6 +1,6 @@
 .school-container {
   padding: 20px;
-  margin-top: 60px;
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -56,8 +56,8 @@
 }
 
 .class-card {
-  width: 150px;            /* ✅ fixed width */
-  height: 120px;           /* ✅ equal height makes it square */
+  width: 150px;          
+  height: 120px;          
   background: white;
   border: 2px solid #ddd;
   border-radius: 10px;
@@ -75,4 +75,34 @@
   background: #e6f0ff;
   border-color: #007bff;
   transform: scale(1.05);
+}
+
+/* Back Button */
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: inline-block;
+  background-color: #e8f0fe;
+  color: #1d4ed8;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.back-arrow:hover {
+  background-color: #2563eb;
+  color: white;
+  transform: translateX(-3px);
+}
+
+/* Ensure container supports absolute positioning */
+.school-container {
+  position: relative;
+  padding-top: 60px; /* gives space so button doesn't overlap title */
 }

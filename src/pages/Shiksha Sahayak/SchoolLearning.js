@@ -7,6 +7,9 @@ export default function SchoolLearning() {
 
   return (
     <div className="school-container">
+       <Link to="/shiksha-sahayak" className="back-arrow">
+        ← Back
+      </Link>
       <h1 className="school-title">NCERT Syllabus</h1>
       <p className="school-subtitle">Here are what you have asked for</p>
       {/* <input
