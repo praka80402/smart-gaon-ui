@@ -33,3 +33,8 @@
   border-radius: 50%;
   margin-bottom: 10px;
 }
+
+.donation-icon {
+  width: 80px !important;
+  height: 80px !important;
+}

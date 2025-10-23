@@ -115,3 +115,8 @@
   padding: 6px 14px;
   font-weight: 600;
 }
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between buttons and coin badge */
+}

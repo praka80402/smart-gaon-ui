@@ -188,6 +188,8 @@
 // };
 
 // export default Ncert;
+
+
 import React, { useState } from "react";
 import { jsPDF } from "jspdf";
 import "./Ncert.css";

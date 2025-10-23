@@ -23,7 +23,7 @@ export default function SevaBazaarDashboard() {
       default:
         return (
           <div className="sewa-intro">
-            <h2>Welcome to Seva Bazaar 🌾</h2>
+            <h1>Welcome to Seva Bazaar 🌾</h1>
             <p>
               Connecting villagers with trusted service providers for daily and
               agricultural needs.
@@ -66,18 +66,18 @@ export default function SevaBazaarDashboard() {
         >
           Post Request
         </button>
-        <button
+        {/* <button
           className={activeTab === "history" ? "active" : ""}
           onClick={() => setActiveTab("history")}
         >
           History
-        </button>
-        <button
+        </button> */}
+        {/* <button
           className={activeTab === "chat" ? "active" : ""}
           onClick={() => setActiveTab("chat")}
         >
           Chat
-        </button>
+        </button> */}
       </div>
 
       {/* ✅ Dynamic Section */}
