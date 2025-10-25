@@ -39,7 +39,7 @@ export default function GaonConnect() {
       <header className="gaonconnect-header">
         <div className="gaonconnect-left">
           {/* <img src={logo} alt="SmartGaon Logo" className="gaonconnect-logo" /> */}
-          <h2>Gaon Connect - Smart Community</h2>
+          <h2>My Village</h2>
         </div>
       </header>
 

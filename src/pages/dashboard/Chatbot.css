@@ -125,3 +125,14 @@
     opacity: 1;
   }
 }
+
+.mic-btn {
+  background: #ffb200;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+/* .chat-msg.bot { background: #eee; }
+.chat-msg.user { background: #d4f8d4; text-align: right; } */

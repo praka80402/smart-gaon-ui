@@ -1,0 +1,19 @@
+.coin-badge-inline {
+  display: flex;
+  align-items: center;
+  background-color: #2d8b4e; /* your green background */
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.coin-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px; /* 👈 adds space between icon and number */
+}
+
+.coin-count {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}

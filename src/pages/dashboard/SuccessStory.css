@@ -1,4 +1,4 @@
-.success-section {
+/* .success-section {
   background-color:  #d6dadf;
   text-align: center;
   padding: 60px 20px;
@@ -42,4 +42,224 @@
 .location {
   font-size: 0.85rem;
   opacity: 0.9;
+} */
+
+/* 🌿 General Layout */
+.success-page {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7f9fc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
+
+/* 🧭 Header */
+.success-header {
+  font-size: 1.8rem;
+  font-weight: 700;
+  
+  margin-bottom: 40px;
+  color: #111010;
+  text-align: center;
+  
+  padding: 20px 0;
+  
+  top: 0;
+  z-index: 1000;
+  /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); */
+}
+
+/* 🪴 Marquee Section */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #fcfcfd;
+  margin: 40px 0;
+  height: 320px;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.story-card {
+  width: 260px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 15px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(31, 138, 56, 0.25);
+}
+
+.story-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #1f8a38;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.story-card .name {
+  font-weight: 700;
+  color: #1f8a38;
+}
+
+.story-card .address {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 6px;
+}
+
+.story-card .summary {
+  font-size: 0.9em;
+  color: #444;
+  line-height: 1.5;
+  height: 4.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.story-card button {
+  background: #1f8a38;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.story-card button:hover {
+  background: #166d2d;
+}
+
+/* 💬 Dialog Modal */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.dialog-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 90%;
+  max-width: 550px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease;
+}
+
+.dialog-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  border: 2px solid #1f8a38;
+  margin-bottom: 15px;
+}
+
+.dialog-box h3 {
+  color: #1f8a38;
+  margin-bottom: 10px;
+}
+
+.dialog-box p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: #ccc;
+  border: none;
+  color: #222;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #bbb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 📜 Footer */
+.success-footer {
+  background: #0d4d1e;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 1em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* 📱 Responsive */
+@media (max-width: 650px) {
+  .story-card {
+    width: 90vw;
+    margin: 12px auto;
+  }
+
+  .marquee-container {
+    height: 420px;
+  }
+
+  .dialog-box {
+    padding: 20px;
+  }
+}
+
+.paused {
+  animation-play-state: paused !important; /* ✅ Stops marquee without breaking layout */
+}
+

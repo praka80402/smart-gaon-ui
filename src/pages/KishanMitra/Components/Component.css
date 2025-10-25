@@ -1,0 +1,217 @@
+
+
+/* .header {
+  background: #fff;
+  color:  #338944;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+} */
+ .cropheader {
+  background:  white;
+   position: sticky;       
+    top: 0;                
+  z-index: 1000;  
+  color: #338944;
+  padding: 24px 0 24px 40px;
+  text-align: left; 
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.cropheader:hover {
+  color: #1b5e20 !important;        
+} 
+
+
+.container {
+  max-width: 520px;
+  background: #fff;
+  margin: 40px auto;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(50,100,40,.14);
+}
+
+label {
+  color: #244422;
+  display: block;
+  margin-bottom: 16px;
+  font-size: 1.1em;
+}
+
+.file-upload {
+  background: #e7f5e2;
+  border: 2px dashed #85b881;
+  border-radius: 12px;
+  padding: 25px 0;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.file-upload:hover { background: #dbf8d4; }
+
+.preview-img {
+  display: block;
+  max-width: 100%;
+  max-height: 230px;
+  border-radius: 10px;
+  border: 2px solid #338944;
+  margin: 15px auto;
+}
+
+.submit-btn {
+  background: #338944;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.response-box {
+  background: #f4f8f1;
+  padding: 20px;
+  margin-top: 22px;
+  border-radius: 10px;
+  color: #195c38;
+  text-align: left;
+  box-shadow: 0 1px 8px rgba(34,100,50,.11);
+}
+
+.tips-section {
+  max-width: 660px;
+  background: #fcfbeb;
+  margin: 35px auto;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 2px 15px rgba(160,180,70,.1);
+}
+
+.tips-section h2 {
+  color: #338944;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.tips-section ul {
+  font-size: 1.1em;
+  color: #394a36;
+  line-height: 1.7;
+}
+/* organic Farming */
+
+.organic-header {
+  background: white;
+   position: sticky;       
+    top: 0;                
+  z-index: 1000; 
+  color: #4ab366;
+  padding: 20px 25px;
+  font-size: 1.7em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.organic-container {
+  max-width: 610px;
+  background: #fff;
+  margin: 38px auto;
+  border-radius: 18px;
+  padding: 34px;
+  box-shadow: 0 2px 14px rgba(52, 180, 90, 0.12);
+}
+
+.organic-form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.organic-select {
+  width: 50%;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1.6px solid #379a55;
+}
+
+.organic-submit-btn {
+  background: #379a55;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.organic-method-box {
+  margin-top: 22px;
+  background: #e6f8e1;
+  padding: 18px;
+  border-radius: 10px;
+  color: #195c38;
+}
+
+.organic-section-title {
+  text-align: center;
+  margin-top: 40px;
+  color: #379a55;
+}
+
+.organic-marquee-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.organic-marquee {
+  display: flex;
+  animation: scroll 35s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-55%); }
+}
+
+.organic-card {
+  width: 260px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 2px 8px rgba(80, 160, 80, 0.12);
+}
+
+.organic-dialog-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.organic-dialog-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 85%;
+  max-width: 480px;
+  position: relative;
+}
+
+.organic-cancel-btn {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background: #ccc;
+  border: none;
+  padding: 6px;
+}
+
+

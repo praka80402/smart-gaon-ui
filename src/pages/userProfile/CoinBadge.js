@@ -21,14 +21,14 @@ export default function CoinBadge() {
   ];
 
   useEffect(() => {
-    // ✅ Only reward coins for specific service pages
+    
     if (serviceRoutes.includes(location.pathname)) {
-      const add = Math.floor(Math.random() * 6) + 5; // +5–10 coins
+      const add = Math.floor(Math.random() * 6) + 5; 
       const newTotal = coins + add;
       setCoins(newTotal);
       localStorage.setItem("coins", newTotal);
     }
-  }, [location.pathname]); // runs when route changes
+  }, [location.pathname]); 
 
   return (
     <div className="coin-badge-inline">

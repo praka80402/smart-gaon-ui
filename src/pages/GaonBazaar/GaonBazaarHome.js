@@ -8,20 +8,7 @@ import OfflineCatalog from "./OfflineCatalog";
 import ViewListing from "./ViewListing";
 
 export default function GaonBazaarHome() {
-//   return (
-//     <div className="gaon-home">
-//       <h1>🛒 Gaon Bazaar</h1>
-//       <p>Buy, Sell, and Exchange local products and services in your village.</p>
 
-//       <div className="home-buttons">
-//         <Link to="/gaon-bazaar/search" className="home-btn">🔍 Search Products</Link>
-//         <Link to="/gaon-bazaar/create" className="home-btn">➕ Create Listing</Link>
-//         <Link to="/gaon-bazaar/my-listings" className="home-btn">📋 My Listings</Link>
-//         <Link to="/gaon-bazaar/offline" className="home-btn">📥 Offline Catalog</Link>
-//       </div>
-//     </div>
-//   );
-// }
  const [activeTab, setActiveTab] = useState("home");
 
   const renderContent = () => {

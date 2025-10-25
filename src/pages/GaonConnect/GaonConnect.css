@@ -5,15 +5,27 @@
 }
 
 /* Header */
-.gaonconnect-header {
+/* .gaonconnect-header {
   background: #ffffff;
+  
   border-bottom: 2px solid #e0e0e0;
   padding: 15px 30px;
   color: #1f8a38;
   display: flex;
   align-items: center;
   justify-content: space-between;
+} */
+.gaonconnect-header {
+  position: sticky;      /* 👈 keeps header visible on scroll */
+  top: 0;                /* 👈 sticks it to the top */
+  z-index: 1000;         /* 👈 ensures it stays above content */
+  background: #ffffff;   /* 👈 prevents transparency when scrolling */
+  color: #1f8a38;
+  padding: 15px 30px;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 👈 optional soft shadow */
 }
+
 .gaonconnect-left {
   display: flex;
   align-items: center;
@@ -25,13 +37,24 @@
 }
 
 /* Tabs */
-.gaonconnect-nav {
+/* .gaonconnect-nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background: #e8f5ea;
   padding: 10px 0;
   gap: 10px;
+} */
+ .gaonconnect-nav {
+  position: sticky;
+  top: 65px; /* 👈 adjust depending on header height */
+  background: #f8faf8;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #dcdcdc;
 }
 .gaonconnect-nav button {
   background: white;

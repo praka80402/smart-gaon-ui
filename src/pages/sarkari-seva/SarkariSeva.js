@@ -49,49 +49,85 @@ export default function SarkariSeva() {
       icon: "⚡",
       title: "Solar Rooftop Scheme",
       color: "green",
-      links: ["Check Eligibility", "Apply Online", "Calculate Subsidy"],
+      links: [
+        { label: "Registered Vendors", url: "https://consumer.pmsuryaghar.gov.in/consumer/#/registered-vendors" },
+        { label: "Apply ", url: "https://consumer.pmsuryaghar.gov.in/consumer/#/login" },
+        { label: "Subsidy Details ", url: "https://pmsuryaghar.gov.in/#/consumer-financing-options " },
+      ],
     },
     {
       icon: "👩‍💼",
       title: "Mudra Loan Yojana",
       color: "green",
-      links: ["Check Eligibility", "Apply Online", "Track Application"],
+     links: [
+    { label: "Eligibility", url: "https://www.mudra.org.in/Offerings" },
+    { label: "Download Form", url: "https://www.mudra.org.in/Home/PMMYBankersKit" }
+  ],
+      // links: ["Check Eligibility", "Apply Online"],
     },
     {
       icon: "🍽️",
       title: "Ration Card Services",
       color: "green",
-      links: ["Apply for New Card", "Update Details", "Check Status"],
+       links: [
+    { label: "Apply Online", url: "https://rconline.bihar.gov.in/" },
+    { label: "Modification", url: "https://services.india.gov.in/service/detail/ration-card-modifications-epds-integration-application-form" }
+  ],
+      // links: ["Apply for New Card", "Update Details", "Check Status"],
     },
     {
       icon: "🚜",
       title: "Krishi Yantra Subsidy",
       color: "green",
-      links: ["Check Eligibility", "Apply Online", "View Approved List"],
+        links: [
+    { label: "Check Eligibility", url: "https://www.myscheme.gov.in/schemes/ky#eligibility" },
+    { label: "Apply Online", url: "https://sso.rajasthan.gov.in/register" }
+  ],
+    //  links: ["Check Eligibility", "Apply Online", "View Approved List"],
     },
     {
       icon: "👶",
       title: "Maternity Benefit Scheme",
       color: "green",
-      links: ["Check Eligibility", "Apply Online", "Track Payment"],
+      links: [
+        { label: "Check Eligibility", url: "https://www.myscheme.gov.in/schemes/pmmvy#eligibility" },
+        { label: "Apply ", url: "https://pmmvy.wcd.gov.in/ManageCitizenGrievance/RegisterGrievance" },
+        { label: "Track Payment ", url: "https://pmmvy.wcd.gov.in/ManageTrackBeneficiary/TrackBeneficiary" },
+      ],
+      // links: ["Check Eligibility", "Apply Online", "Track Payment"],
     },
     {
       icon: "🎓",
       title: "Education Scholarships",
       color: "green",
-      links: ["Check Eligibility", "Apply Online", "Track Application"],
+      links: [
+        { label: "Check Eligibility", url: "https://indiafellow.org/apply-now/" },
+        { label: "Apply Online ", url: "https://indiafellow.org/apply-now/" },
+        // { label: "Subsidy Details ", url: "https://pmsuryaghar.gov.in/#/consumer-financing-options " },
+      ],
+      // links: ["Check Eligibility", "Apply Online", "Track Application"],
     },
     {
       icon: "🏛️",
       title: "Pension Schemes",
       color: "green",
-      links: ["Old Age Pension", "Widow Pension", "Disability Pension"],
+      links: [
+        { label: "Old Age Pension", url: "https://www.sspmis.bihar.gov.in/CheckMvpyAadharAuth" },
+        // { label: "Apply ", url: "https://consumer.pmsuryaghar.gov.in/consumer/#/login" },
+        // { label: "Subsidy Details ", url: "https://pmsuryaghar.gov.in/#/consumer-financing-options " },
+      ],
+      // links: ["Old Age Pension", "Widow Pension", "Disability Pension"],
     },
     {
       icon: "💡",
       title: "Skill Development",
       color: "green",
-      links: ["Check Courses", "Apply for Training", "Find Centers"],
+       links: [
+        { label: "Check Courses", url: " https://skillmissionbihar.org/" },
+        { label: "Apply for Training ", url:" https://skillmissionbihar.org/"  },
+        { label: "Find Centers", url: " https://skillmissionbihar.org/" },
+      ],
+      // links: ["Check Courses", "Apply for Training", "Find Centers"],
     },
   ];
 

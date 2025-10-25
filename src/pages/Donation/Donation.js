@@ -1,6 +1,5 @@
 
-
-// import React, { useState } from "react";
+// import React, { useState, useEffect, useRef } from "react";
 // import "./Donation.css";
 
 // export default function Donation() {
@@ -9,6 +8,8 @@
 //   const [showPaymentBox, setShowPaymentBox] = useState(false);
 //   const [showReceiptBox, setShowReceiptBox] = useState(false);
 //   const [receiptData, setReceiptData] = useState({});
+
+//   const projectListRef = useRef(null); // ✅ Ref for auto-scroll
 
 //   const handleDonate = () => {
 //     if (!project || !amount || amount <= 0) {
@@ -50,6 +51,25 @@
 //     },
 //   ];
 
+//   // ✅ Auto-scroll every 3 seconds
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       if (projectListRef.current) {
+//         const scrollAmount = projectListRef.current.scrollLeft + 280; // scroll by one card width
+//         if (
+//           scrollAmount >=
+//           projectListRef.current.scrollWidth - projectListRef.current.clientWidth
+//         ) {
+//           projectListRef.current.scrollTo({ left: 0, behavior: "smooth" }); // restart
+//         } else {
+//           projectListRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
+//         }
+//       }
+//     }, 3000);
+
+//     return () => clearInterval(interval);
+//   }, []);
+
 //   return (
 //     <div className="donation-page">
 //       {/* Header */}
@@ -89,7 +109,7 @@
 //       {/* Ongoing Projects */}
 //       <div className="project-section">
 //         <h3>Ongoing Projects</h3>
-//         <div className="project-grid">
+//         <div className="project-grid" ref={projectListRef}>
 //           {ongoingProjects.map((p, i) => (
 //             <div className="project-card" key={i}>
 //               <img src={p.img} alt={p.title} />
@@ -141,6 +161,7 @@
 //     </div>
 //   );
 // }
+// ----------------------
 
 import React, { useState, useEffect, useRef } from "react";
 import "./Donation.css";
@@ -149,10 +170,11 @@ export default function Donation() {
   const [project, setProject] = useState("");
   const [amount, setAmount] = useState("");
   const [showPaymentBox, setShowPaymentBox] = useState(false);
+  const [showQRBox, setShowQRBox] = useState(false); // ✅ QR Code Popup
   const [showReceiptBox, setShowReceiptBox] = useState(false);
   const [receiptData, setReceiptData] = useState({});
 
-  const projectListRef = useRef(null); // ✅ Ref for auto-scroll
+  const projectListRef = useRef(null);
 
   const handleDonate = () => {
     if (!project || !amount || amount <= 0) {
@@ -168,6 +190,7 @@ export default function Donation() {
     const transaction = "TXN" + Math.floor(Math.random() * 1e7);
     setReceiptData({ project, amount, method, date, transaction });
     setShowPaymentBox(false);
+    setShowQRBox(false);
     setTimeout(() => setShowReceiptBox(true), 500);
   };
 
@@ -194,16 +217,15 @@ export default function Donation() {
     },
   ];
 
-  // ✅ Auto-scroll every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       if (projectListRef.current) {
-        const scrollAmount = projectListRef.current.scrollLeft + 280; // scroll by one card width
+        const scrollAmount = projectListRef.current.scrollLeft + 280;
         if (
           scrollAmount >=
           projectListRef.current.scrollWidth - projectListRef.current.clientWidth
         ) {
-          projectListRef.current.scrollTo({ left: 0, behavior: "smooth" }); // restart
+          projectListRef.current.scrollTo({ left: 0, behavior: "smooth" });
         } else {
           projectListRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
         }
@@ -215,12 +237,10 @@ export default function Donation() {
 
   return (
     <div className="donation-page">
-      {/* Header */}
       <header className="donation-header">
         <h1>Donation - Smart Contribution</h1>
       </header>
 
-      {/* Donation Card */}
       <div className="donation-box">
         <h2>Welcome to Smart Donation 💚</h2>
         <p className="donation-subtext">
@@ -249,7 +269,6 @@ export default function Donation() {
         <button onClick={handleDonate}>Donate Now</button>
       </div>
 
-      {/* Ongoing Projects */}
       <div className="project-section">
         <h3>Ongoing Projects</h3>
         <div className="project-grid" ref={projectListRef}>
@@ -272,12 +291,52 @@ export default function Donation() {
             <h2>Select Payment Method</h2>
             <div className="payment-options">
               {["Credit Card", "Debit Card", "Bank Transfer", "UPI"].map((method) => (
-                <button key={method} onClick={() => processPayment(method)}>
+                <button
+                  key={method}
+                  onClick={() => {
+                    if (method === "UPI") {
+                      setShowPaymentBox(false);
+                      setShowQRBox(true);
+                    } else {
+                      processPayment(method);
+                    }
+                  }}
+                >
                   {method}
                 </button>
               ))}
             </div>
-            <button className="close-btn" onClick={() => setShowPaymentBox(false)}>Cancel</button>
+            <button className="close-btn" onClick={() => setShowPaymentBox(false)}>
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* ✅ UPI QR Code Modal */}
+      {showQRBox && (
+        <div className="donation-overlay" onClick={() => setShowQRBox(false)}>
+          <div className="donation-popup" onClick={(e) => e.stopPropagation()}>
+            <h2>Scan & Pay (UPI)</h2>
+
+            <img
+              src={`https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=yourupi@bank&pn=SmartGaon%20Donation&am=${amount}&cu=INR`}
+              alt="UPI QR"
+              style={{ width: "220px", height: "220px", margin: "10px auto" }}
+            />
+
+            <p>Use Google Pay / PhonePe / Paytm to scan and pay.</p>
+
+            <button
+              onClick={() => processPayment("UPI")}
+              style={{ marginTop: "12px" }}
+            >
+              I Have Paid ✔️
+            </button>
+
+            <button className="close-btn" onClick={() => setShowQRBox(false)}>
+              Cancel
+            </button>
           </div>
         </div>
       )}

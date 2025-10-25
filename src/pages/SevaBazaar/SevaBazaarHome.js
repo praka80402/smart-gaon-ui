@@ -40,7 +40,7 @@ export default function SevaBazaarDashboard() {
 
       {/* ✅ Header Info */}
       <div className="sewa-header">
-        <h1 className="sewa-title">Sewa Bazaar - Smart Services</h1>
+        <h1 className="sewa-title"> Sewa Bazaar - Smart Services</h1>
         {/* <p className="sewa-subtitle">
           Empowering rural communities through digital access to local services.
         </p> */}
@@ -66,18 +66,7 @@ export default function SevaBazaarDashboard() {
         >
           Post Request
         </button>
-        {/* <button
-          className={activeTab === "history" ? "active" : ""}
-          onClick={() => setActiveTab("history")}
-        >
-          History
-        </button> */}
-        {/* <button
-          className={activeTab === "chat" ? "active" : ""}
-          onClick={() => setActiveTab("chat")}
-        >
-          Chat
-        </button> */}
+       
       </div>
 
       {/* ✅ Dynamic Section */}
