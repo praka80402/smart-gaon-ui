@@ -23,7 +23,7 @@
   margin-bottom: 20px;
 }
 
-.profile-avatar {
+.profile-page-avatar {
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -102,3 +102,141 @@
   background-color: #43a047;
 }
 
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.edit-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.password-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.password-section label {
+  font-weight: 500;
+}
+
+.password-section input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.password-section .save-btn {
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.password-section .save-btn:hover {
+  background-color: #43a047;
+}
+
+/* .profile-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.change-password-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.change-password-btn:hover {
+  background-color: #0056b3;
+} */
+
+/* 🎯 Make both buttons same size and style */
+.profile-buttons {
+  display: flex;
+  justify-content: flex-start; /* 👈 Align to left */
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  padding-left: 5px; /* optional slight indent */
+}
+
+.edit-btn,
+.change-password-btn {
+  width: 180px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.edit-btn:hover,
+.change-password-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.change-password-btn.active {
+  background-color: #28a745; /* green when open */
+}

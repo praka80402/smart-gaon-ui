@@ -1,13 +1,10 @@
 /* For style, add this to your App.css or separate CSS file */
-.services {
+/* .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   flex:3;
   padding: 20px;
-   /* justify-items: center;
-  align-items: center; */
-  /* margin-top: 40px; */
 }
 
 .service-card {
@@ -37,4 +34,51 @@
 .donation-icon {
   width: 80px !important;
   height: 80px !important;
+} */
+
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  height: 110px; /* smaller height */
+  width: 100%;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.donation-icon {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: contain;
+}
+
+h5 {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
 }

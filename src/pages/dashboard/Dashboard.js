@@ -24,7 +24,7 @@ function Dashboard({ setShowLoginModal }) {
           <ServiceSection setShowLoginModal={setShowLoginModal} />
         </div>
         <div className="impact-right">
-          <Weatherdashboard />
+          <Weatherdashboard layout="vertical"/>
         </div>
       </section>
       <ConnectingVillage />

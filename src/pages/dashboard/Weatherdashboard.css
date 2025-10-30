@@ -13,8 +13,7 @@
   align-items: center;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   font-family: "Segoe UI", sans-serif;               
-  /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); */
-  /* font-family: "Segoe UI", sans-serif; */
+  
    
 }
 
@@ -39,7 +38,7 @@
 .weather-info h2 {
   font-size: 36px;
   margin-top: 8px; 
-  /* margin: 0; */
+ 
   font-weight: bold;
 }
 
@@ -94,4 +93,98 @@
   font-size: 18px;
   display: block;
   margin-bottom: 5px;
+}
+
+
+/* ✅ Horizontal layout for Feed Page */
+/* ✅ Feed Page Horizontal Weather Card */
+/* ✅ FEED PAGE WEATHER CARD (flat green compact style) */
+.weather-widget.feed {
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+  color: #fff;
+  border-radius: 18px;
+  padding: 14px 22px;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Top section */
+.weather-top-feed {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  text-align: left;
+}
+
+.weather-icon-feed {
+  width: 65px;
+  height: 65px;
+}
+
+.weather-info-feed h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.weather-info-feed sup {
+  font-size: 1rem;
+}
+
+.weather-info-feed span {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.weather-info-feed p {
+  margin: 3px 0 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+/* Divider */
+.weather-divider-feed {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  margin: 10px 0;
+}
+
+/* Bottom details */
+/* ✅ Bottom details (equal spacing & clean layout) */
+.weather-bottom-feed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 8px 20px;
+  margin-top: 5px;
+}
+
+.weather-bottom-feed div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.weather-bottom-feed p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.weather-bottom-feed span {
+  font-size: 0.85rem;
+  color: #e8fbe9;
+}
+
+.mini-icon-feed {
+  width: 22px;
+  height: 22px;
 }

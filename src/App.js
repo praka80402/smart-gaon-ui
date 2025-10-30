@@ -332,7 +332,7 @@
 
 // export default App;
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 
@@ -363,12 +363,21 @@ import SevaBazaarHome from "./pages/SevaBazaar/SevaBazaarHome";
 import GaonBazaarDashboard from "./pages/GaonBazaar/GaonBazaarDashboard";
 import GaonBazaarHome from "./pages/GaonBazaar/GaonBazaarHome";
 import Donation from "./pages/Donation/Donation";
+import ResetPassword from "./pages/login/ResetPassword";
 
 
 function App() {
   // 🔑 Global login modal & authentication state
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [loggedIn, setLoggedIn] = useState(!!localStorage.getItem("token"));
+  
+    useEffect(() => {
+    const handleStorageChange = () => {
+      setLoggedIn(!!localStorage.getItem("token"));
+    };
+    window.addEventListener("storage", handleStorageChange);
+    return () => window.removeEventListener("storage", handleStorageChange);
+  }, []);
 
   return (
     <Router>
@@ -474,7 +483,8 @@ function App() {
             }
           />
 
-    
+  {/* existing routes */}
+  <Route path="/reset-password" element={<ResetPassword />} />
 
           <Route
             path="/shiksha-sahayak/school-learning"

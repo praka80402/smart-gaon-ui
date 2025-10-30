@@ -95,6 +95,7 @@ import React, { useState } from "react";
 import "./KishanMitra.css";
 import CropMonitor from "./Components/CropMonitoring"; // ✅ add this
 import OrganicFarming from "./Components/OrganicFarming";
+import SoilTesting from "./Components/SoilTesting";
 
 export default function KisanMitraHome() {
 
@@ -111,7 +112,7 @@ export default function KisanMitraHome() {
       icon: "🧪",
       title: "Soil & Crop Testing",
       desc: "Submit samples and view test results for better yield.",
-      action: () => alert("Soil Testing Coming Soon!"),
+      action: () => setActivePage("Soil"),
     },
     {
       icon: "📷",
@@ -157,6 +158,9 @@ export default function KisanMitraHome() {
   }
    if (activePage === "organic") {
   return <OrganicFarming goBack={() => setActivePage(null)} />;
+}
+if (activePage === "soil") {
+  return <SoilTesting goBack={() => setActivePage(null)} />;
 }
   return (
     <div className="kisan-home">
