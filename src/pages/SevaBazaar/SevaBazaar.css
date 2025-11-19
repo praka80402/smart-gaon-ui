@@ -1,0 +1,331 @@
+/* 🌿 Page Container */
+.sewa-dashboard {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7fbf7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🧭 Sticky Header */
+.sewa-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  width: 100%;
+  /* text-align: center; */
+  padding: 20px 60px;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sewa-title {
+  font-size: 28px;
+  color: #1f8a38;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* 📌 Navigation Tabs */
+.sewa-tabs {
+  /* position: sticky; */
+  top: 70px; /* Adjust if header height changes */
+  z-index: 999;
+  background: #f8faf8;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.sewa-tabs button {
+  background: #ffffff;
+  border: 1px solid #1f8a38;
+  color: #1f8a38;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.sewa-tabs button:hover {
+  background: #e8f5e9;
+  transform: translateY(-1px);
+}
+
+.sewa-tabs button.active {
+  background: #1f8a38;
+  color: #ffffff;
+  border-color: #1f8a38;
+  box-shadow: 0 3px 6px rgba(0, 128, 0, 0.2);
+}
+
+/* 🪴 Intro Section */
+.sewa-intro {
+  text-align: center;
+  padding: 80px 20px;
+   margin: 0 auto; 
+   width: 100%;
+  max-width: 700px;
+}
+
+.sewa-intro h1 {
+  font-size: 30px;
+  color: #1f8a38;
+  margin-bottom: 15px;
+}
+
+.sewa-intro p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* 📦 Dynamic Section */
+.sewa-section {
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* 🪶 Responsive Design */
+@media (max-width: 768px) {
+  .sewa-title {
+    font-size: 22px;
+  }
+
+  .sewa-tabs button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .sewa-intro h1 {
+    font-size: 24px;
+  }
+
+  .sewa-section {
+    padding: 25px 10px;
+  }
+}
+
+/* provider */
+
+/* 🌾 Provider Section */
+.sewa-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8fbf8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 🏷️ Section Title */
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f8a38;
+  margin-bottom: 25px;
+}
+
+/* 🔍 Search Bar */
+.search-bar {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: 1px solid #1f8a38;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.05);
+}
+
+.search-bar:focus {
+  border-color: #157a2e;
+  box-shadow: 0 3px 8px rgba(21, 122, 46, 0.2);
+}
+
+/* 🧰 Provider Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+/* 📇 Provider Card */
+.provider-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.provider-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 128, 0, 0.15);
+  border-color: #1f8a38;
+}
+
+/* 👤 Provider Name & Info */
+.provider-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f8a38;
+  margin-bottom: 6px;
+}
+
+.provider-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+
+/* ⭐ Rating Badge */
+.rating {
+  display: inline-block;
+  background: #1f8a38;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 3px 8px;
+  margin-top: 8px;
+}
+
+/* ✅ Certified Badge */
+.certified {
+  display: inline-block;
+  background: #e8f5e9;
+  color: #1f8a38;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #1f8a38;
+  border-radius: 10px;
+  padding: 4px 8px;
+  margin-top: 8px;
+}
+
+/* ⚠️ No Data Message */
+.no-data {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .search-bar {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .provider-card h3 {
+    font-size: 16px;
+  }
+
+  .provider-card p {
+    font-size: 13px;
+  }
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #f9faf9;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #1f8a38;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgba(31, 138, 56, 0.2);
+}
+
+/* 🧾 Textarea */
+textarea.input-field {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* 📅 Inline Fields */
+.inline-fields {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.inline-fields .input-field {
+  flex: 1;
+}
+
+/* ✅ Submit Button */
+.submit-btn {
+  width: 100%;
+  background-color: #1f8a38;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(31, 138, 56, 0.2);
+}
+
+.submit-btn:hover {
+  background-color: #166d2d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(31, 138, 56, 0.25);
+}
+
+/* ⚙️ Responsive Design */
+@media (max-width: 768px) {
+  .sewa-container {
+    padding: 20px 15px;
+    margin: 40px 10px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .input-field {
+    font-size: 14px;
+  }
+
+  .inline-fields {
+    flex-direction: column;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+  }
+}

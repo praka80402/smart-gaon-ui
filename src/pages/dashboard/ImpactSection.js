@@ -11,7 +11,7 @@ function ImpactSection() {
 
   return (
     <section className="impact-section">
-      <h2 className="impact-title">Our Impact</h2>
+      <h1 className="impact-title">Our Impact</h1>
       <div className="impact-cards">
         {impactData.map((item, index) => (
           <div key={index} className="impact-card">

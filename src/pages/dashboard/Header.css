@@ -1,0 +1,176 @@
+/* 🌿 SmartGaon Global Theme */
+:root {
+  --theme-green: #198754;
+  --theme-green-dark: #157347;
+  --white: #ffffff;
+}
+
+/* -------------------------------
+   🧭 Header Layout & Structure
+--------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--theme-green);
+  /* color: var(--white); */
+  padding: 10px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left Section (Logo + Title) */
+.header-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header-left .logo {
+  width: 45px;
+  height: 45px;
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 4px;
+}
+.header-left h1 {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+/* -------------------------------
+   🌐 Language Switcher
+--------------------------------*/
+.header-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--white);
+}
+.header-right .lang {
+   width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  padding: 6px;
+  border-radius: 8px;                
+  background-color: #ffffff;          
+  filter: none;                       
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+.header-right .lang:hover {
+  background-color: #e8f5e9;      
+  transform: scale(1.05);
+}
+.lang-label {
+  margin-right: 10px;
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* Language Dropdown */
+.lang-dropdown {
+  position: absolute;
+  top: 120%;
+  right: 100px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+.lang-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  color: var(--theme-green);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.lang-dropdown button:hover {
+  background-color: rgba(25, 135, 84, 0.1);
+}
+
+/* -------------------------------
+   🔘 Login / Logout Buttons
+--------------------------------*/
+.btn {
+  background-color:#198754; ;
+  color: #ffffff !important; 
+ border: 2px solid #84bca2;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(149, 232, 193, 0.8);
+}
+
+/* Always solid button (no flicker) */
+.btn:hover {
+  background-color: var(--theme-green);
+  color: var(--white);
+  border-color: var(--theme-green-dark);
+  box-shadow: 0 0 10px rgba(25, 135, 84, 0.4);
+  transform: scale(1.02);
+}
+
+/* Optional margin for spacing */
+.ms-3 {
+  margin-left: 12px;
+}
+
+/* -------------------------------
+   🔔 Profile / Notification Icons (future ready)
+--------------------------------*/
+.bell-icon,
+.profile-icon {
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 140px;
+}
+.profile-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  color: var(--theme-green);
+  font-weight: 600;
+  cursor: pointer;
+}
+.profile-dropdown button:hover {
+  background-color: rgba(22, 163, 74, 0.1);
+}

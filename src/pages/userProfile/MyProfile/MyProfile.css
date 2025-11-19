@@ -1,0 +1,242 @@
+
+.profile-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+  background-color: #f8f9fc;
+  min-height: 100vh;
+}
+
+.profile-card-center {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  padding: 30px;
+}
+
+.profile-img-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-page-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #65abec;
+}
+
+.upload-btn {
+  background-color: #65abec;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.upload-btn.save {
+  background-color: #4caf50;
+}
+
+.profile-info {
+  text-align: left;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  color: #333;
+}
+
+.profile-info p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.profile-form {
+  margin-top: 20px;
+}
+
+.profile-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-form input,
+.profile-form textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #43a047;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.edit-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.password-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.password-section label {
+  font-weight: 500;
+}
+
+.password-section input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.password-section .save-btn {
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.password-section .save-btn:hover {
+  background-color: #43a047;
+}
+
+/* .profile-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.change-password-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.change-password-btn:hover {
+  background-color: #0056b3;
+} */
+
+/* 🎯 Make both buttons same size and style */
+.profile-buttons {
+  display: flex;
+  justify-content: flex-start; /* 👈 Align to left */
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  padding-left: 5px; /* optional slight indent */
+}
+
+.edit-btn,
+.change-password-btn {
+  width: 180px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.edit-btn:hover,
+.change-password-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.change-password-btn.active {
+  background-color: #28a745; /* green when open */
+}
