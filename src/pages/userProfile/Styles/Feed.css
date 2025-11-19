@@ -23,7 +23,6 @@
   padding: 20px;
 }
 
-/* Main Feed */
 .feed-main {
   flex: 1;
   background: #fff;
@@ -33,7 +32,6 @@
   min-height: 80vh;
 }
 
-/* Post Section */
 .welcome-banner {
   background: #eaf7ec;
   color: #166534;
@@ -75,7 +73,6 @@
   background-color: #15803d;
 }
 
-/* Individual Posts */
 .post-card {
   border-radius: 10px;
   padding: 15px;
@@ -84,44 +81,6 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* .upload-section {
-  margin: 8px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.upload-section input {
-  display: block;
-  margin-top: 4px;
-}
-
-.preview-section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-.create-post button {
-  background-color: #22c55e;
-  border: none;
-  padding: 10px 16px;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.create-post button:hover {
-  background-color: #16a34a;
-}
- */
-/* 📦 Upload Section Styling */
-
-/* 🔹 Upload Section Layout */
-/* 🔹 Upload Section (side by side buttons) */
 .upload-section {
   display: flex;
   align-items: center;
@@ -130,8 +89,6 @@
   margin-top: 15px;
   flex-wrap: wrap;
 }
-
-/* 🔹 Label styling */
 .file-label {
   display: flex;
   align-items: center;
@@ -150,7 +107,6 @@
   display: none;
 }
 
-/* Hover effect */
 .file-label:hover {
   background: #ecfdf5;
   border-color: #22c55e;

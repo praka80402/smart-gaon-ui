@@ -764,7 +764,7 @@ export default function ProfilePage() {
         });
         setUser(res.data);
 
-        const imgRes = await axios.get("http://localhost:8080/api/profile/image", {
+        const imgRes = await axios.get(config.API_BASE_URL+"/api/profile/image", {
           headers: { Authorization: `Bearer ${token}` },
           responseType: "arraybuffer",
         });
@@ -825,7 +825,7 @@ export default function ProfilePage() {
 
   const handleSave = async () => {
     try {
-      await axios.put("http://localhost:8080/api/profile/update", user, {
+      await axios.put(config.API_BASE_URL+"/api/profile/update", user, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setMessage("✅ Profile updated successfully!");
@@ -850,7 +850,7 @@ export default function ProfilePage() {
 
     try {
       const res = await axios.put(
-        "http://localhost:8080/api/profile/change-password",
+        config.API_BASE_URL+"/api/profile/change-password",
         { currentPassword, newPassword },
         { headers: { Authorization: `Bearer ${token}` } }
       );

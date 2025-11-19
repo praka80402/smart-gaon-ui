@@ -1,5 +1,4 @@
 
-
 .chat-toggle {
   position: fixed;
   bottom: 35px;
@@ -134,5 +133,3 @@
   margin-right: 5px;
   cursor: pointer;
 }
-/* .chat-msg.bot { background: #eee; }
-.chat-msg.user { background: #d4f8d4; text-align: right; } */
