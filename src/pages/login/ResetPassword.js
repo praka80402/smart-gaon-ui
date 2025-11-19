@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import config from "../../config";
 
 export default function ResetPassword() {
   const [searchParams] = useSearchParams();
@@ -21,7 +22,7 @@ export default function ResetPassword() {
 
     try {
       const res = await axios.post(
-        `http://localhost:8080/api/auth/reset-password?token=${token}&newPassword=${password}`
+        config.API_BASE_URL+`/api/auth/reset-password?token=${token}&newPassword=${password}`
       );
       setMessage("✅ Password reset successful! Redirecting to login...");
       setTimeout(() => navigate("/"), 2000);

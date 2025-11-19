@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 // import "./PostCard.css";
 import "../Styles/PostCard.css";
+import config from "../../../config";
+
 export default function PostCard({ post, fetchPosts }) {
   const token = localStorage.getItem("token");
   const [comment, setComment] = useState("");
@@ -10,7 +12,7 @@ export default function PostCard({ post, fetchPosts }) {
     if (!comment.trim()) return;
     try {
       await axios.post(
-        `http://localhost:8080/api/comments/${post.id}`,
+        config.API_BASE_URL+`/api/comments/${post.id}`,
         { text: comment },
         { headers: { Authorization: `Bearer ${token}` } }
       );

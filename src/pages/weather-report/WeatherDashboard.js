@@ -117,6 +117,7 @@
 import React, { useEffect, useState } from "react";
 import AlertBanner from "./AlertBanner";
 import "./WeatherCard.css";
+import config from "../../config";
 
 export default function WeatherDashboard() {
   const [weather, setWeather] = useState(null);
@@ -129,7 +130,7 @@ export default function WeatherDashboard() {
         (position) => {
           const { latitude, longitude } = position.coords;
 
-          fetch(`http://localhost:8080/api/weather?lat=${latitude}&lon=${longitude}`)
+          fetch(config.API_BASE_URL+`/api/weather?lat=${latitude}&lon=${longitude}`)
             .then((res) => {
               if (!res.ok) throw new Error("Network error");
               return res.json();

@@ -46,6 +46,7 @@ import logo from "../../../logo.svg";
 import CoinBadge from "../CoinBadge";
 import axios from "axios";
 import defaultAvatar from "../../../assets/avatar.png"; // fallback image
+import config from "../../../config";
 
 export default function Header({ setLoggedIn }) {
   const navigate = useNavigate();
@@ -58,7 +59,7 @@ export default function Header({ setLoggedIn }) {
   useEffect(() => {
     const fetchProfileImage = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/api/profile/image", {
+        const res = await axios.get(config.API_BASE_URL+"/api/profile/image", {
           headers: { Authorization: `Bearer ${token}` },
           responseType: "arraybuffer",
         });

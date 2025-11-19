@@ -194,6 +194,7 @@ import React, { useState } from "react";
 import { jsPDF } from "jspdf";
 import "./Ncert.css";
 import { Link } from "react-router-dom";
+import config from "../../../config";
 
 const Ncert = () => {
   const [selectedClass, setSelectedClass] = useState("");
@@ -222,7 +223,7 @@ const Ncert = () => {
 
     if (selectedClass === "11" && selectedSubject === "social") {
       const ncertUrl = "https://ncert.nic.in/textbook/pdf/bejm1ps.pdf";
-      const proxyUrl = `http://localhost:8080/api/pdf/fetch?url=${encodeURIComponent(ncertUrl)}`;
+      const proxyUrl = config.API_BASE_URL+`/api/pdf/fetch?url=${encodeURIComponent(ncertUrl)}`;
       setPdfUrl(proxyUrl);
     } else {
       const blobUrl = generateDummyPDF(chapterTitle);

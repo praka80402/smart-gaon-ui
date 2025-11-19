@@ -640,8 +640,9 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
 import { GoogleLogin } from "@react-oauth/google";
+import config from "../../config";
 
-const BASE_URL = "http://localhost:8080/api/auth";
+const BASE_URL = config.API_BASE_URL+"/api/auth";
 
 const LoginPage = ({ showModal, setShowModal, setLoggedIn }) => {
   const [activeTab, setActiveTab] = useState("login");

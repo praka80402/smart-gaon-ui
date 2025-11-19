@@ -127,6 +127,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";   // ✅ Add this
 import "./Chatbot.css";
 import chatIcon from "../../assets/chatbot.jpeg";
+import config from "../../config";
 
 function ChatBot() {
   const navigate = useNavigate(); // ✅ Now we can navigate inside app
@@ -193,11 +194,11 @@ function ChatBot() {
 
     // ✅ Otherwise call backend for answer
     try {
-      const response = await fetch("http://localhost:8080/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage })
-      });
+      const response = await fetch(`${config.API_BASE_URL}/chat`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ message: userMessage })
+});
 
       const data = await response.json();
       setMessages((prev) => [...prev, { text: data.reply, sender: "bot" }]);

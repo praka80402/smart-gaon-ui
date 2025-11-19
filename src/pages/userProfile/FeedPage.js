@@ -6,6 +6,7 @@ import axios from "axios";
 import PostCard from "./components/PostCard";
 import "./Styles/Feed.css";
 import Weatherdashboard from "../dashboard/Weatherdashboard";
+import config from "../../config";
 
 export default function FeedPage() {
   const token = localStorage.getItem("token");
@@ -15,7 +16,7 @@ export default function FeedPage() {
 
   const fetchProfile = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/api/profile", {
+      const res = await axios.get(config.API_BASE_URL+"/api/profile", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUser(res.data);
@@ -26,7 +27,7 @@ export default function FeedPage() {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/api/posts");
+      const res = await axios.get(config.API_BASE_URL+"/api/posts");
       setPosts(res.data);
     } catch (err) {
       console.error(err);
@@ -37,7 +38,7 @@ export default function FeedPage() {
     if (!content.trim()) return;
     try {
       await axios.post(
-        "http://localhost:8080/api/posts",
+        config.API_BASE_URL+"/api/posts",
         { content },
         { headers: { Authorization: `Bearer ${token}` } }
       );

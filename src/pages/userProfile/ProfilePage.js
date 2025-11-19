@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Styles/Feed.css";
+import config from "../../config";
 
 export default function ProfilePage() {
   const token = localStorage.getItem("token");
@@ -8,7 +9,7 @@ export default function ProfilePage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/profile", {
+      .get(config.API_BASE_URL+"/api/profile", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setUser(res.data))

@@ -729,6 +729,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./MyProfile.css";
 import userImage from "../../../assets/avatar.png";
+import config from "../../../config";
 
 export default function ProfilePage() {
   const token = localStorage.getItem("token");
@@ -758,7 +759,7 @@ export default function ProfilePage() {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/api/profile", {
+        const res = await axios.get(config.API_BASE_URL+"/api/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(res.data);
@@ -808,7 +809,7 @@ export default function ProfilePage() {
     const formData = new FormData();
     formData.append("file", selectedFile);
     try {
-      await axios.post("http://localhost:8080/api/profile/upload-image", formData, {
+      await axios.post(config.API_BASE_URL+"/api/profile/upload-image", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
